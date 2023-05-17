@@ -25,13 +25,15 @@
 	<div id="page">
 		<div id="phishguardcontain">
 			<a>
-				<img style="cursor: pointer;" id="phishguardimg" alt="Phishguard logo" src="./../images/level_1.png">
+				<img id="phishguardimg" alt="Phishguard logo" src="./../images/level_1.png">
 			</a>
 		</div>
 
 		<div id="level1_summary">
-			<p class="summary">Now you are newbie, so to help you in this we provide some hints.<br> Read the hints carefully.</p>
-			<p class="hint">ⓘ Search The Term <a>"Phising"</a> And Understant It. Here You Will Meet Your Friend "Sam" Message With Him.<br> Be carefull because you want to face a attack at any time.</p>
+			<p class="summary">Now you are newbie, so to help you in this we provide some hints.<br> Read the hints
+				carefully.</p>
+			<p class="hint">ⓘ Search The Term <a>"Phising"</a> And Understant It. Here You Will Meet Your Friend "Sam"
+				Message With Him.<br> Be carefull because you want to face a attack at any time.</p>
 		</div>
 
 
@@ -48,7 +50,7 @@
 					</li>
 					<li class="link active">
 						<a href="">
-							<h4 class="banner">
+							<h4 id="shareBtn" class="banner">
 								<span>Share</span>
 							</h4>
 						</a>
@@ -82,6 +84,38 @@
 
 			<!-- end footer -->
 
+			<script>
+				document.querySelector('#shareBtn')
+					.addEventListener('click', event => {
+
+						// Fallback, Tries to use API only
+						// if navigator.share function is
+						// available
+						if (navigator.share) {
+							navigator.share({
+
+								// Title that occurs over
+								// web share dialog
+								title: 'PhishGuard',
+
+								// URL to share
+								url: 'https://iammuhammedfuhad.github.io/PhishGuard/'
+							}).then(() => {
+								console.log('Thanks for sharing!');
+							}).catch(err => {
+
+								// Handle errors, if occurred
+								console.log(
+									"Error while using Web share API:");
+								console.log(err);
+							});
+						} else {
+
+							// Alerts user if API not available
+							alert("Browser doesn't support this API !");
+						}
+					})
+			</script>
 
 		</div>
 	</div>
