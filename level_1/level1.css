@@ -688,3 +688,9 @@ s:before {
 	line-height: 30px;
 	font-size: 18px;
 }
+
+.hint a{
+	color: #ec8200;
+	text-decoration: underline;
+	text-decoration-color: #ffaf1b;
+}
