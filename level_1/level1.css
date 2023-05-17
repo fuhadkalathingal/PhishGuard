@@ -85,7 +85,7 @@ s:before {
 
 #phishguardcontain {
 	max-width: 400px;
-	margin: 15px auto -40px;
+	margin: 15px auto -15px;
 }
 	#phishguardcontain img {
 		width: 100%;
@@ -462,7 +462,7 @@ s:before {
 
 @media (min-width: 976px) {
 	.gridunit.quote {
-		height: 327px;
+		height: 200px;
 		-webkit-transform-style: preserve-3d;
 		-moz-transform-style: preserve-3d;
 		transform-style: preserve-3d;
@@ -470,7 +470,7 @@ s:before {
 	}
 	.quotecontain {
 		position: relative;
-		top: 49%;
+		top: 20%;
 		-webkit-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 		transform: translateY(-50%);
@@ -678,3 +678,12 @@ s:before {
 	}
 }
 
+.summary {
+	margin-bottom: 30px;
+	line-height: 30px;
+}
+
+.hint{
+	margin-bottom: 30px;
+	line-height: 30px;
+}
