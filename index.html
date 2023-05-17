@@ -51,7 +51,7 @@
 					</li>
 					<li class="link active">
 						<a href="">
-							<h4 class="banner">
+							<h4 id="shareBtn" class="banner">
 								<span>Share</span>
 							</h4>
 						</a>
@@ -124,6 +124,40 @@
 
 
 			<!-- end footer -->
+
+			<script>
+				document.querySelector('#shareBtn')
+					.addEventListener('click', event => {
+
+						// Fallback, Tries to use API only
+						// if navigator.share function is
+						// available
+						if (navigator.share) {
+							navigator.share({
+
+								// Title that occurs over
+								// web share dialog
+								title: 'PhishGuard',
+
+								// URL to share
+								url: 'https://iammuhammedfuhad.github.io/PhishGuard/'
+							}).then(() => {
+								console.log('Thanks for sharing!');
+							}).catch(err => {
+
+								// Handle errors, if occurred
+								console.log(
+									"Error while using Web share API:");
+								console.log(err);
+							});
+						} else {
+
+							// Alerts user if API not available
+							alert("Browser doesn't support this API !");
+						}
+					})
+			</script>
+
 
 
 		</div>
