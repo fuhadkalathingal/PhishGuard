@@ -67,8 +67,16 @@ body {
     width: 0%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {   
+    h1{
+        font-size: 2.0rem;
+    }
     .choice-container {
-        min-width: 40rem;
+        width: 100%;
+        min-width: unset;
+    }
+    #progressBar {
+        width: 14rem;
+        height: 2rem;
     }
 }
