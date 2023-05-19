@@ -4,9 +4,9 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/iammuhammedfuhad/PhishGuard/LICENSE.md)
 
-[![GitHub issues](https://img.shields.io/github/issues/your-username/PhishGuard.svg)](https://github.com/iammuhammedfuhad/PhishGuard/issues)
+[![GitHub issues](https://img.shields.io/github/issues/iammuhammedfuhad/PhishGuard.svg)](https://github.com/iammuhammedfuhad/PhishGuard/issues)
 
-[![GitHub stars](https://img.shields.io/github/stars/your-username/PhishGuard.svg)](https://github.com/iammuhammedfuhad/PhishGuard/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/iammuhammedfuhad/PhishGuard.svg)](https://github.com/iammuhammedfuhad/PhishGuard/stargazers)
 
 PhishGuard is an interactive cyber awareness game designed to educate users about phishing attacks and improve their ability to detect and avoid them.
 
@@ -45,7 +45,7 @@ To run PhishGuard locally, follow these steps:
 
    ```bash
 
-   git clone https://github.com/your-username/PhishGuard.git
+   git clone https://github.com/iammuhammedfuhad/PhishGuard.git
 
    ```
 
