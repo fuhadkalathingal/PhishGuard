@@ -1,7 +1,3 @@
-
-
-
-
 # PhishGuard - Contributing Guidelines
 
 Thank you for your interest in contributing to the PhishGuard project! We welcome contributions from the community and appreciate your efforts to make this project better. To ensure a smooth collaboration and maintain a high standard of quality, please review and follow these guidelines when making contributions.
