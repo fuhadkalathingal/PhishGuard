@@ -2,11 +2,11 @@
 
 # PhishGuard - A Cyber Awareness Game
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/your-username/PhishGuard/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/iammuhammedfuhad/PhishGuard/LICENSE.md)
 
-[![GitHub issues](https://img.shields.io/github/issues/your-username/PhishGuard.svg)](https://github.com/your-username/PhishGuard/issues)
+[![GitHub issues](https://img.shields.io/github/issues/your-username/PhishGuard.svg)](https://github.com/iammuhammedfuhad/PhishGuard/issues)
 
-[![GitHub stars](https://img.shields.io/github/stars/your-username/PhishGuard.svg)](https://github.com/your-username/PhishGuard/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/your-username/PhishGuard.svg)](https://github.com/iammuhammedfuhad/PhishGuard/stargazers)
 
 PhishGuard is an interactive cyber awareness game designed to educate users about phishing attacks and improve their ability to detect and avoid them.
 
@@ -26,7 +26,7 @@ PhishGuard is an interactive cyber awareness game designed to educate users abou
 
 ## Demo
 
-Include a GIF or screenshot showcasing your project in action.
+<a href="">PhishGuard Live Demo</a>
 
 ## Features
 
@@ -36,7 +36,6 @@ Include a GIF or screenshot showcasing your project in action.
 
 - Interactive phishing scenarios for users to practice their skills
 
-- Leaderboard to track high scores and compete with friends
 
 ## Installation
 
@@ -58,23 +57,15 @@ To run PhishGuard locally, follow these steps:
 
    ```
 
-3. Install the dependencies:
 
-   ```bash
 
-   npm install
 
-   ```
 
-4. Start the application:
 
-   ```bash
 
-   npm start
 
-   ```
 
-5. Open your browser and visit `http://localhost:3000`.
+
 
 ## Usage
 
@@ -96,7 +87,7 @@ Contributions are welcome! To contribute to PhishGuard, follow these steps:
 
 ## License
 
-PhishGuard is licensed under the [MIT License](https://github.com/your-username/PhishGuard/blob/master/LICENSE).
+PhishGuard is licensed under the [MIT License](https://github.com/iammuhammedfuhad/PhishGuard/LICENSE.md).
 
 
 
