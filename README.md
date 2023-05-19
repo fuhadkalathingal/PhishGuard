@@ -1,5 +1,3 @@
-
-
 # PhishGuard - A Cyber Awareness Game
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/iammuhammedfuhad/PhishGuard/LICENSE.md)
