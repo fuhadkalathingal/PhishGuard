@@ -25,7 +25,8 @@
 	<div id="page">
 		<div id="phishguardcontain">
 			<a>
-				<img style="cursor: pointer;" id="phishguardimg" alt="Phishguard logo" src="images/phishguard_mainlogo.png">
+				<img style="cursor: pointer;" id="phishguardimg" alt="Phishguard logo"
+					src="images/phishguard_mainlogo.png">
 			</a>
 		</div>
 
@@ -43,7 +44,7 @@
 						</a>
 					</li>
 					<li class="link">
-						<a href="https://iammuhammedfuhad.github.io/PhishGuard/level_1/level_1.html">
+						<a id="startButton" href="https://iammuhammedfuhad.github.io/PhishGuard/level_1/level_1.html">
 							<h4 class="banner">
 								<span>Let's Play</span>
 							</h4>
@@ -74,10 +75,10 @@
 				</div>
 
 				<div class="gridparent c1">
-					<div class="gridunit c1 screenshot"><img
-								alt="phishguard screenshot" src="images/phishing_report_1.png"></div>
-					<div class="gridunit c1 screenshot"><img
-								alt="phishguard screenshot" src="images/phishing_report_2.png"></div>
+					<div class="gridunit c1 screenshot"><img alt="phishguard screenshot"
+							src="images/phishing_report_1.png"></div>
+					<div class="gridunit c1 screenshot"><img alt="phishguard screenshot"
+							src="images/phishing_report_2.png"></div>
 				</div>
 
 				<!-- -->
@@ -91,7 +92,8 @@
 					</div>
 					<div class="gridunit c1 quote">
 						<div class="quotecontain">
-							<p class="quotation">"Cyber Fraudsters Are Using ChatGPT For Phishing Attacks, Police Caution."</p>
+							<p class="quotation">"Cyber Fraudsters Are Using ChatGPT For Phishing Attacks, Police
+								Caution."</p>
 							<p class="citation gridcaptionbold">- ABP News</p>
 						</div>
 					</div>
@@ -156,6 +158,36 @@
 							alert("Browser doesn't support this API !");
 						}
 					})
+			</script>
+
+			<script>
+				// Retrieve the start button element
+				const startButton = document.getElementById('startButton');
+
+				// Attach an event listener to the start button
+				startButton.addEventListener('click', redirectToLevel);
+
+				// Function to redirect to the appropriate level
+				function redirectToLevel(event) {
+					// Prevent the default link behavior
+					event.preventDefault();
+
+					// Check if the user has previously reached a level
+					if (localStorage.getItem('highestLevel')) {
+						const highestLevel = parseInt(localStorage.getItem('highestLevel'));
+
+						// Construct the URL for the appropriate level page
+						const levelUrl = 'https://iammuhammedfuhad.github.io/PhishGuard/level_' + highestLevel + '/level_' + highestLevel + '.html';
+
+						// Redirect the user to the appropriate level page
+						window.location.href = levelUrl;
+					} else {
+						// If there is no highest level reached, redirect the user to the starting level
+						window.location.href = 'https://iammuhammedfuhad.github.io/PhishGuard/level_1/level_1.html';
+					}
+				}
+
+
 			</script>
 
 

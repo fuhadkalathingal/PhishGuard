@@ -16,5 +16,33 @@
             <a href="https://iammuhammedfuhad.github.io/PhishGuard/level_2/level_2.html" id="highscore-btn" class="btn">Next Level</a>
         </div>
     </div>
+
+    <script>
+        // Retrieve the button element
+        const saveLevelButton = document.getElementById('highscore-btn');
+
+        // Attach an event listener to the button
+        saveLevelButton.addEventListener('click', saveLevel);
+
+        // Function to save the current level as the highest level
+        function saveLevel() {
+            // Get the current level value (replace 'currentLevel' with your actual level variable)
+            const currentLevel = 2; // Example: level 2
+
+            // Retrieve the highest level from local storage
+            const highestLevel = localStorage.getItem('highestLevel');
+
+            // Check if the current level is higher than the stored highest level
+            if (!highestLevel || currentLevel > parseInt(highestLevel)) {
+                // Update the highest level in the local storage
+                localStorage.setItem('highestLevel', currentLevel);
+
+                // Provide feedback to the user (optional)
+                alert('Highest level updated successfully!');
+            }
+        }
+
+
+    </script>
 </body>
 </html>
