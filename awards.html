@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awards</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="awards.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div id="highScores" class="flex-center flex-column">
+            <h1 id="finalScore">Leaderboard 🏆</h1>
+            <div>
+                <h1 id="currentLevel"></h1>
+            </div>
+            <p class="awardsText">Awards :</p>
+            <div id="awards">
+                <div id="awardsImages"></div>
+            </div>
+            <a href="/" class="btn">GO HOME<i class="fas fa-home"></i></a>
+        </div>
+    </div>
+    <script>
+        // Retrieve the current level value from local storage
+        const currentLevel = localStorage.getItem('currentLevel');
+      
+        // Define the awards for each level
+        const levelAwards = {
+          1: 'Level 1 Award',
+          2: 'Level 2 Award',
+          // Add more levels and their respective awards here
+        };
+      
+        // Display the current level on the page
+        const currentLevelElement = document.getElementById('currentLevel');
+        currentLevelElement.textContent = 'Current Level : ' + currentLevel;
+      
+      
+        // Display the awards images
+        const awardsImagesElement = document.getElementById('awardsImages');
+        for (let level = 1; level <= currentLevel; level++) {
+          const awardImage = document.createElement('img');
+          awardImage.src = 'images/level_' + level + '.png'; // Replace with the appropriate image source for each level award
+          awardImage.alt = levelAwards[level];
+          awardsImagesElement.appendChild(awardImage);
+        }
+      </script>
+
+</body>
+
+</html>

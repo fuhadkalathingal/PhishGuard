@@ -27,7 +27,7 @@
         // Function to save the current level as the highest level
         function saveLevel() {
             // Get the current level value (replace 'currentLevel' with your actual level variable)
-            const currentLevel = 2; // Example: level 2
+            const currentLevel = 1; // Example: level 2
 
             // Retrieve the highest level from local storage
             const highestLevel = localStorage.getItem('highestLevel');
@@ -38,7 +38,7 @@
                 localStorage.setItem('highestLevel', currentLevel);
 
                 // Provide feedback to the user (optional)
-                alert('Highest level updated successfully!');
+                console.log("Saved Current Level")
             }
         }
 
