@@ -12,9 +12,9 @@ let availableQuestions = []
 
 let questions = [
     {
-        question: "Pick the correct option based on the amazon voucher send by Sam 💬",
-        choice1: 'It is real, I want the reward',
-        choice2: 'No, Its not safe. Its a phishing link',
+        question: "Choose the correct option based on the Amazon voucher sent by Sam 🎁💰.",
+        choice1: 'It\'s genuine, and I\'m eager to claim the reward',
+        choice2: 'No, it\'s not secure. It seems to be a phishing link.',
         answer: 2,
     }
 ]
