@@ -678,19 +678,20 @@
      }
  }
  
- .summary {
+.summary {
      margin-bottom: 30px;
      line-height: 30px;
- }
+}
  
- .hint{
+.hint{
      margin-bottom: 30px;
      line-height: 30px;
      font-size: 18px;
- }
+}
  
- .hint a{
+.hint a{
      color: #ec8200;
      text-decoration: underline;
      text-decoration-color: #ffaf1b;
- }
+}
+
