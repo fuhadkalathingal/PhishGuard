@@ -1,4 +1,4 @@
- /* RESET */
+  /* RESET */
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:top}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 a, a:link, a:visited { color: inherit; text-decoration: inherit; }
 
@@ -82,13 +82,8 @@ s:before {
 
 /* PHISHGUARD LOGO */
 
-.logo {
-	width: 140px;
-	margin: 50px;
-	background-color: #210002;
-}
 
-/* #phishguardcontain {
+#phishguardcontain {
 	max-width: 400px;
 	margin: 15px auto -40px;
 }
@@ -105,7 +100,7 @@ s:before {
 		padding-left: 10px;
 		padding-right: 20px;
 	}
-} */
+}
 
 #maincontain {
 	background-color: #210002;
@@ -682,31 +677,4 @@ s:before {
 		letter-spacing: 1px;
 	}
 }
-
-/* Images Style */
-.home-image {
-	border-radius: 10px;
-}
-
-/* Testimony Style */
-.testimony {
-	font-size: 15px;
-	line-height: 20px;
-	color: white;
-}
-
-.quotecontain {
-	padding-top: 25px;
-	padding-bottom: 25px;
-	border-radius: 10px;
-	background-color: #1B1717;
-  }
-
-  .cap {
-	color: #6B728E;
-	font-size: 14px;
-  }
-  
-  
-  
 
