@@ -683,3 +683,30 @@ s:before {
 	}
 }
 
+/* Images Style */
+.home-image {
+	border-radius: 10px;
+}
+
+/* Testimony Style */
+.testimony {
+	font-size: 15px;
+	line-height: 20px;
+	color: white;
+}
+
+.quotecontain {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-radius: 10px;
+	background-color: #1B1717;
+  }
+
+  .cap {
+	color: #6B728E;
+	font-size: 14px;
+  }
+  
+  
+  
+
