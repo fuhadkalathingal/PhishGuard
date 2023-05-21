@@ -28,29 +28,47 @@
     <script>
         // Retrieve the current level value from local storage
         const currentLevel = localStorage.getItem('currentLevel');
-      
-        // Define the awards for each level
-        const levelAwards = {
-          1: 'Level 1 Award',
-          2: 'Level 2 Award',
-          // Add more levels and their respective awards here
-        };
-      
+
+        // Retrieve the highest level reached from local storage
+        const highestLevel = localStorage.getItem('highestLevel');
+
         // Display the current level on the page
         const currentLevelElement = document.getElementById('currentLevel');
-        currentLevelElement.textContent = 'Current Level : ' + currentLevel;
-      
-      
-        // Display the awards images
-        const awardsImagesElement = document.getElementById('awardsImages');
-        for (let level = 1; level <= currentLevel; level++) {
-          const awardImage = document.createElement('img');
-          awardImage.src = 'images/level_' + level + '.png'; // Replace with the appropriate image source for each level award
-          awardImage.alt = levelAwards[level];
-          awardsImagesElement.appendChild(awardImage);
-        }
-      </script>
+        currentLevelElement.textContent = 'Current Level: ' + currentLevel;
 
+        // Display the awards for each level up to the current level
+        const awardsElement = document.getElementById('awards');
+
+        if (currentLevel) {
+            for (let level = 1; level <= currentLevel; level++) {
+                // Create an image element for the award
+                const awardImage = document.createElement('img');
+
+                // Set the image source based on the level
+                awardImage.src = `images/level_${level}.png`; // Replace with the appropriate image source
+
+                // Add alt text to the image
+                awardImage.alt = `Level ${level} Award`;
+
+                // Add a class to the image for styling
+                awardImage.classList.add('awardImage');
+
+                // Add the image element to the awards element
+                awardsElement.appendChild(awardImage);
+            }
+        } else {
+            const noAwardsText = document.createElement('p');
+            noAwardsText.textContent = 'No awards to display.';
+            awardsElement.appendChild(noAwardsText);
+        }
+    </script>
+
+    <script>
+        // Store the current level in local storage
+        localStorage.setItem('currentLevel', '2');
+    </script>
 </body>
 
 </html>
+
+
