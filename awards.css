@@ -175,6 +175,6 @@ input::placeholder {
     height: 100px;
   }
   
-  #awards p.no-awards-text {
+  #awards p{
     color: white;
   }
