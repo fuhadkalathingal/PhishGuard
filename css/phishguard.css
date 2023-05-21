@@ -82,8 +82,13 @@ s:before {
 
 /* PHISHGUARD LOGO */
 
+.logo {
+	width: 140px;
+	margin: 50px;
+	background-color: #210002;
+}
 
-#phishguardcontain {
+/* #phishguardcontain {
 	max-width: 400px;
 	margin: 15px auto -40px;
 }
@@ -100,7 +105,7 @@ s:before {
 		padding-left: 10px;
 		padding-right: 20px;
 	}
-}
+} */
 
 #maincontain {
 	background-color: #210002;
