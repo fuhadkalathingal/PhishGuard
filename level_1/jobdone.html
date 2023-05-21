@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
     <title>Jobe Done 🎊</title>
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="question.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="container">
         <div id="home" class="flex-column flex-center">
-            <h2 class="loose" style="text-align: center;">Now that you have also safeguarded Sam 😊,<br> you can ensure the security of everyone else as well. 🔒</h2>
-            <h1 class="summary">Next time you receive a phishing link, do not spread it and keep to maintain good cyber hygiene. 💪💻</h1>
-            <a href="https://iammuhammedfuhad.github.io/PhishGuard/level_2/level_2.html" id="highscore-btn" class="btn">Next Level</a>
+            <h2 class="loose" style="text-align: center;">Now that you have also safeguarded Sam 😊,<br> you can ensure
+                the security of everyone else as well. 🔒</h2>
+            <h1 class="summary">Next time you receive a phishing link, do not spread it and keep to maintain good cyber
+                hygiene. 💪💻</h1>
+            <a href="https://iammuhammedfuhad.github.io/PhishGuard/level_2/level_2.html" id="highscore-btn"
+                class="btn">Next Level</a>
         </div>
     </div>
 
     <script>
-        // Retrieve the button element
         const saveLevelButton = document.getElementById('highscore-btn');
 
-        // Attach an event listener to the button
         saveLevelButton.addEventListener('click', saveLevel);
 
-        // Function to save the current level as the highest level
         function saveLevel() {
-            // Get the current level value (replace 'currentLevel' with your actual level variable)
-            const currentLevel = 1; // Example: level 2
+            try {
+                const currentLevel = 1;
+                const highestLevel = localStorage.getItem('highestLevel');
 
-            // Retrieve the highest level from local storage
-            const highestLevel = localStorage.getItem('highestLevel');
-
-            // Check if the current level is higher than the stored highest level
-            if (!highestLevel || currentLevel > parseInt(highestLevel)) {
-                // Update the highest level in the local storage
-                localStorage.setItem('highestLevel', currentLevel);
-
-                // Provide feedback to the user (optional)
-                console.log("Saved Current Level")
+                if (!highestLevel || currentLevel > parseInt(highestLevel)) {
+                    localStorage.setItem('highestLevel', currentLevel);
+                    console.log("Saved Current Level");
+                }
+            } catch (error) {
+                console.error("Error occurred while saving the level:", error);
             }
         }
-
-
     </script>
+
 </body>
+
 </html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
     <title>Level 2 Completed 🎊</title>
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="question.css">
@@ -23,30 +23,25 @@
     </div>
 
     <script>
-        // Retrieve the button element
         const saveLevelButton = document.getElementById('highscore-btn');
 
-        // Attach an event listener to the button
         saveLevelButton.addEventListener('click', saveLevel);
 
-        // Function to save the current level as the highest level
         function saveLevel() {
-            // Get the current level value (replace 'currentLevel' with your actual level variable)
-            const currentLevel = 2; // Example: level 2
+            try {
+                const currentLevel = 2;
+                const highestLevel = localStorage.getItem('highestLevel');
 
-            // Retrieve the highest level from local storage
-            const highestLevel = localStorage.getItem('highestLevel');
-
-            // Check if the current level is higher than the stored highest level
-            if (!highestLevel || currentLevel > parseInt(highestLevel)) {
-                // Update the highest level in the local storage
-                localStorage.setItem('highestLevel', currentLevel);
-
-                // Provide feedback to the user (optional)
-                console.log("Saved Current Level")
+                if (!highestLevel || currentLevel > parseInt(highestLevel)) {
+                    localStorage.setItem('highestLevel', currentLevel);
+                    console.log("Saved Current Level");
+                }
+            } catch (error) {
+                console.error("Error occurred while saving the level:", error);
             }
         }
     </script>
+
 </body>
 
 </html>
