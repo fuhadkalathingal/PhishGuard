@@ -3,6 +3,16 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 a, a:link, a:visited { color: inherit; text-decoration: inherit; }
 
 /* GLOBAL */
+/* Main Colors */
+:root {
+	--dark: #000;
+	--dark2: #1A1C20;
+	--light: #fafafa;
+	--gray: #F0F0F0;
+	--darkred: #210002;
+	--red: #931A25;
+	--orange: #ffaf00;
+  }
 
 .section.internallinks, .section.internallinks * {
 	vertical-align: baseline;
@@ -684,16 +694,7 @@ s:before {
 }
 
 /* Ali Mora changes */
-/* Main Colors */
-:root {
-	--dark: #000;
-	--dark2: #1A1C20;
-	--light: #fafafa;
-	--gray: #F0F0F0;
-	--darkred: #210002;
-	--red: #931A25;
-	--orange: #ffaf00;
-  }
+
 /* Images Style */
 .home-image {
 	border-radius: 10px;
