@@ -683,27 +683,90 @@ s:before {
 	}
 }
 
+/* Ali Mora changes */
+/* Main Colors */
+:root {
+	--dark: #000;
+	--dark2: #1A1C20;
+	--light: #fafafa;
+	--gray: #F0F0F0;
+	--darkred: #210002;
+	--red: #931A25;
+	--orange: #ffaf00;
+  }
 /* Images Style */
 .home-image {
 	border-radius: 10px;
 }
 
+/* Middle Section */
+.NavBtn {
+	color: var(--dark);
+	background: linear-gradient(to right, var(--orange), var(--red));
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	transition: background 0.5s;
+	outline: none;
+	border: none;
+	font-weight: 500;
+	border-radius: 0.375rem;
+	font-size: 0.875rem;
+	padding: 0.4rem 4rem;
+	text-align: center;
+	letter-spacing: 0.1em;
+	margin-right: 0.5rem;
+	margin-bottom: 0.5rem;
+  }
+  
+  .NavBtn:hover {
+	background: linear-gradient(to right, var(--red), var(--orange));
+	transform: scale(1.05);
+	transition: transform 0.3s ease-in-out;
+  }
+
+.PlayBtn {
+	color: var(--gray);
+	background: linear-gradient(to right, var(--dark), var(--dark2));
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	transition: background 0.5s;
+	outline: none;
+	border: none;
+	font-weight: 800;
+	border-radius: 0.375rem;
+	font-size: 0.875rem;
+	padding: 0.4rem 4rem;
+	text-align: center;
+	letter-spacing: 0.1em;
+	margin-right: 0.5rem;
+	margin-bottom: 0.5rem;
+  }
+  
+  .PlayBtn:hover {
+	background: linear-gradient(to right, var(--dark2), var(--dark));
+	transform: scale(1.05);
+	transition: transform 0.3s ease-in-out;
+  }
+
+  
 /* Testimony Style */
 .testimony {
 	font-size: 15px;
 	line-height: 20px;
-	color: white;
+	color: var(--light);
 }
 
 .quotecontain {
 	padding-top: 25px;
 	padding-bottom: 25px;
 	border-radius: 10px;
-	background-color: #1B1717;
+	background-color: var(--dark);
   }
 
   .cap {
-	color: #6B728E;
+	color: var(--gray);
 	font-size: 14px;
   }
   
