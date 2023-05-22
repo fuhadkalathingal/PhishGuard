@@ -3,16 +3,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 a, a:link, a:visited { color: inherit; text-decoration: inherit; }
 
 /* GLOBAL */
-/* Main Colors */
-:root {
-	--dark: #000;
-	--dark2: #1A1C20;
-	--light: #fafafa;
-	--gray: #F0F0F0;
-	--darkred: #210002;
-	--red: #931A25;
-	--orange: #ffaf00;
-  }
+
 
 .section.internallinks, .section.internallinks * {
 	vertical-align: baseline;
@@ -694,7 +685,17 @@ s:before {
 }
 
 /* Ali Mora changes */
-
+/* Main Colors */
+:root {
+	--dark: #000;
+	--dark2: #1A1C20;
+	--dark3: #30475E;
+	--light: #fafafa;
+	--gray: #DADADA;
+	--darkred: #210002;
+	--red: #931A25;
+	--orange: #ffaf00;
+  }
 /* Images Style */
 .home-image {
 	border-radius: 10px;
@@ -764,13 +765,38 @@ s:before {
 	padding-bottom: 25px;
 	border-radius: 10px;
 	background-color: var(--dark);
-  }
+}
 
-  .cap {
+.cap {
 	color: var(--gray);
 	font-size: 14px;
+}
+
+/* Footer Section */
+.Footer {
+	background-color:  var(--dark);
+	padding-top: 25px;
+	padding-bottom: 56px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+}
+
+.footerbtn {
+	font-size: 12px;
+	line-height: 20px;
+	padding-left: 24px;
+	padding-right: 24px;
+	font-color: var(--light);
+	border-radius: 10px;
+}
+
+.footertxt {
+	padding-top: 25px;
+	font-size: 16px;
+	line-height: 20px;
+	color: var(--gray);
+	letter-spacing: 0.1em;
+
   }
-  
-  
   
 
