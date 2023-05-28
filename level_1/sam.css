@@ -64,7 +64,6 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Inter", sans-serif;
   font-weight: normal;
@@ -762,4 +761,29 @@ height: 195px;
 .link{
 color: #fff;
 font-size: 15px;
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#hint-button,
+#next-button {
+  background-color: var(--chat-bubble-you);
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#hint-button:hover,
+#next-button:hover {
+  background-color: var(--chat-bubble-you);
 }
