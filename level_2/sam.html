@@ -209,7 +209,7 @@
 
                 </div>
               </div>
-              <div class="chat__content pt-4 px-3">
+              <div class="chat__content pt-4 px-3" id="chat">
                 <ul class="chat__list-messages" id="messageList">
                   <li>
                     <div class="chat__time">Yesterday at 16:43</div>
@@ -252,14 +252,11 @@
                     <div class="chat__bubble chat__bubble--me">
                       I will definitely verify it and keep you informed.
                     </div>
+                    <div id="button-container">
+                      <button id="hint-button">Hint</button>
+                      <button id="next-button">Next Step</button>
+                    </div>
                   </li>
-                  <!-- HINT -->
-                  <div class="hint">
-                    <h2>
-                      <p>💡</p> Hint..!
-                    </h2>
-                    <i>Click the above link to continue<br> Be sure to double-check the domain name of the website.</i>
-                  </div>
                 </ul>
               </div>
               <div class="chat__send-container px-2 px-md-3 pt-1 pt-md-3">
@@ -353,6 +350,36 @@
   <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
   <script src="./script.js"></script>
+  <script>
+    const scrollToBottom = () => {
+      const element = document.getElementById('chat');
+      element.scrollTo({ top: element.scrollHeight, behavior: 'smooth' });
+    };
+
+    scrollToBottom();
+
+    const hintButton = document.getElementById('hint-button');
+    const nextButton = document.getElementById('next-button');
+
+    hintButton.addEventListener('click', function () {
+      showHint();
+    });
+
+    nextButton.addEventListener('click', function () {
+      redirectToNextPage();
+    });
+
+    function showHint() {
+      alert('Be sure to double-check the domain name of the website.');
+    }
+
+    function redirectToNextPage() {
+      window.location.href = 'facebook-login.html';
+    }
+
+
+
+  </script>
 
 </body>
 

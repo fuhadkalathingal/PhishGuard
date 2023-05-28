@@ -209,7 +209,7 @@
 
                 </div>
               </div>
-              <div class="chat__content pt-4 px-3">
+              <div class="chat__content pt-4 px-3" id="chat">
                 <ul class="chat__list-messages" id="messageList">
                   <li>
                     <div class="chat__time">Yesterday at 16:43</div>
@@ -227,7 +227,8 @@
                       Thank you so much for saving me! 😊
                     </div>
                     <div class="chat__bubble chat__bubble--you">
-                      I wasn't aware of the existence of a phishing link, but you have reminded me about the dangers of phishing.
+                      I wasn't aware of the existence of a phishing link, but you have reminded me about the dangers of
+                      phishing.
                     </div>
                   </li>
                   <li>
@@ -253,11 +254,9 @@
                       I will definitely verify it and keep you informed.
                     </div>
                   </li>
-                  <!-- HINT -->
-                  <div class="hint">
-                    <h2>🔴 Tell Him</h2>
-                    <i>Tell him that this is a website spoofing and the link is used to collect our sensitive informations such as password.</i>
-                    <a href="jobdone.html">Click here to continue</a>
+                  <div id="button-container">
+                    <button id="show-alert-button">Hint</button>
+                    <button id="next-button">Next Step</button>
                   </div>
                 </ul>
               </div>
@@ -346,12 +345,58 @@
         <!-- end infos section  -->
       </div>
     </div>
+
+    <div id="custom-alert" class="custom-alert">
+      <div class="custom-alert-message"></div>
+      <button id="custom-alert-close">Close</button>
+    </div>
+
   </div>
 
 
   <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
   <script src="./script.js"></script>
+  <script>
+    const scrollToBottom = () => {
+      const element = document.getElementById('chat');
+      element.scrollTo({ top: element.scrollHeight, behavior: 'smooth' });
+    };
+
+    scrollToBottom();
+
+    const showAlertButton = document.getElementById('show-alert-button');
+    const redirectButton = document.getElementById('next-button');
+    const customAlert = document.getElementById('custom-alert');
+    const alertMessage = document.querySelector('.custom-alert-message');
+    const alertClose = document.getElementById('custom-alert-close');
+
+
+    redirectButton.addEventListener('click', function () {
+      redirectToNextPage();
+    });
+
+    showAlertButton.addEventListener('click', function () {
+      showAlert('Tell him that this is a website spoofing\nand the link is used to collect our sensitive information\nsuch as password.');
+    });
+
+    alertClose.addEventListener('click', function () {
+      hideAlert();
+    });
+
+    function showAlert(message) {
+      alertMessage.innerHTML = message.replace(/\n/g, '<br>');
+      customAlert.style.display = 'block';
+    }
+
+    function hideAlert() {
+      customAlert.style.display = 'none';
+    }
+
+    function redirectToNextPage() {
+      window.location.href = 'game.html';
+    }
+  </script>
 
 </body>
 
