@@ -34,6 +34,7 @@
           const highestLevel = parseInt(getCookie('highestLevel'));
       
           if (!highestLevel || currentLevel > highestLevel) {
+            localStorage.setItem('highestLevel',currentLevel)
             setCookie('highestLevel', currentLevel);
             console.log("Saved Current Level");
           } else {
@@ -42,7 +43,10 @@
         }
       
         function setCookie(name, value) {
-          document.cookie = `${name}=${value}`;
+          var date = new Date();
+          date.setMonth(date.getMonth() + 1);
+          var expires = '; expires=' + date.toUTCString();
+          document.cookie = name + '=' + value + expires + '; path=/';
         }
       
         function getCookie(name) {
