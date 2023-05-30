@@ -61,7 +61,7 @@ const section = document.querySelector("section"),
 
         'use strict';
 
-        var audio = new Audio('levelpassed.mp3'); 
+        var audio = new Audio('assets/levelpassed.mp3'); 
 
         // Play the audio
         audio.play();
