@@ -226,7 +226,7 @@
 
                                 </div>
                             </div>
-                            <div class="chat__content pt-4 px-3">
+                            <div class="chat__content pt-4 px-3" id="chat">
                                 <ul class="chat__list-messages" id="messageList">
                                     <li>
                                         <div class="chat__time">Yesterday at 16:43</div>
@@ -372,11 +372,6 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
     <script src="./script.js"></script>
     <script>
-        const scrollToBottom = () => {
-            const element = document.getElementById('chat');
-            element.scrollTo({ top: element.scrollHeight, behavior: 'smooth' });
-        };
-
         const showAlertButton = document.getElementById('show-alert-button');
         const redirectButton = document.getElementById('next-button');
         const customAlert = document.getElementById('custom-alert');
@@ -409,6 +404,11 @@
             window.location.href = 'jobdone.html';
         }
 
+        const scrollToBottom = () => {
+            const element = document.getElementById('chat');
+            element.scrollTo({ top: element.scrollHeight, behavior: 'smooth' });
+        };
+        
         scrollToBottom();
 
     </script>

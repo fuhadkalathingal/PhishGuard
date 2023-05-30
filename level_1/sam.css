@@ -835,8 +835,9 @@ font-size: 15px;
 
 @media (max-width: 425px) {
   .custom-alert-message{
-    font-size: 10px;
+    font-size: 16px;
     font-weight: bold;
     color: #000;
+    width: 215px;
   }
 }
