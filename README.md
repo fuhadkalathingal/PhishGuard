@@ -4,6 +4,8 @@
 ![GitHub issues](https://img.shields.io/github/issues/iammuhammedfuhad/PhishGuard.svg)
 ![GitHub stars](https://img.shields.io/github/stars/iammuhammedfuhad/PhishGuard.svg)
 
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support-FFDD00.svg)](https://bmc.link/PhishGuard)
+
 PhishGuard is an interactive cyber awareness game designed to educate users about phishing attacks and improve their ability to detect and avoid them.
 
 ## 🎥 Demo
