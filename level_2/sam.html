@@ -227,7 +227,8 @@
                       Thank you so much for saving me! 😊
                     </div>
                     <div class="chat__bubble chat__bubble--you">
-                      I wasn't aware of the existence of a phishing link, but you have reminded me about the dangers of phishing.
+                      I wasn't aware of the existence of a phishing link, but you have reminded me about the dangers of
+                      phishing.
                     </div>
                   </li>
                   <li>
@@ -253,11 +254,15 @@
                       I will definitely verify it and keep you informed.
                     </div>
                     <div id="button-container">
-                      <button id="hint-button">Hint</button>
+                      <button id="show-alert-button">Hint</button>
                       <button id="next-button">Next Step</button>
                     </div>
                   </li>
                 </ul>
+                <div id="custom-alert" class="custom-alert">
+                  <div class="custom-alert-message"></div>
+                  <button id="custom-alert-close">Close</button>
+                </div>
               </div>
               <div class="chat__send-container px-2 px-md-3 pt-1 pt-md-3">
                 <div class="custom-form__send-wrapper">
@@ -356,30 +361,43 @@
       element.scrollTo({ top: element.scrollHeight, behavior: 'smooth' });
     };
 
-    scrollToBottom();
+    
+    const showAlertButton = document.getElementById('show-alert-button');
+    const redirectButton = document.getElementById('next-button');
+    const customAlert = document.getElementById('custom-alert');
+    const alertMessage = document.querySelector('.custom-alert-message');
+    const alertClose = document.getElementById('custom-alert-close');
 
-    const hintButton = document.getElementById('hint-button');
-    const nextButton = document.getElementById('next-button');
 
-    hintButton.addEventListener('click', function () {
-      showHint();
-    });
-
-    nextButton.addEventListener('click', function () {
+    redirectButton.addEventListener('click', function () {
       redirectToNextPage();
     });
 
-    function showHint() {
-      alert('Be sure to double-check the domain name of the website.');
+    showAlertButton.addEventListener('click', function () {
+      showAlert('Be sure to double-check the domain name of the website.');
+    });
+
+    alertClose.addEventListener('click', function () {
+      hideAlert();
+    });
+
+    function showAlert(message) {
+      alertMessage.innerHTML = message.replace(/\n/g, '<br>');
+      customAlert.style.display = 'block';
+    }
+
+    function hideAlert() {
+      customAlert.style.display = 'none';
     }
 
     function redirectToNextPage() {
       window.location.href = 'facebook-login.html';
     }
 
-
-
+    scrollToBottom();
+    
   </script>
+
 
 </body>
 

@@ -259,6 +259,12 @@
                     <button id="next-button">Next Step</button>
                   </div>
                 </ul>
+
+                <div id="custom-alert" class="custom-alert">
+                  <div class="custom-alert-message"></div>
+                  <button id="custom-alert-close">Close</button>
+                </div>
+                
               </div>
               <div class="chat__send-container px-2 px-md-3 pt-1 pt-md-3">
                 <div class="custom-form__send-wrapper">
@@ -345,12 +351,6 @@
         <!-- end infos section  -->
       </div>
     </div>
-
-    <div id="custom-alert" class="custom-alert">
-      <div class="custom-alert-message"></div>
-      <button id="custom-alert-close">Close</button>
-    </div>
-
   </div>
 
 
@@ -362,8 +362,6 @@
       const element = document.getElementById('chat');
       element.scrollTo({ top: element.scrollHeight, behavior: 'smooth' });
     };
-
-    scrollToBottom();
 
     const showAlertButton = document.getElementById('show-alert-button');
     const redirectButton = document.getElementById('next-button');
@@ -394,8 +392,11 @@
     }
 
     function redirectToNextPage() {
-      window.location.href = 'game.html';
+      window.location.href = 'jobdone.html';
     }
+
+    scrollToBottom();
+    
   </script>
 
 </body>
