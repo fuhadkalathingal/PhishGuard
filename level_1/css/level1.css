@@ -251,9 +251,9 @@ s:before {
 }
 
 .banner span {
-  background: url("../images/banner_transparent_left.png") no-repeat left top /
+  background: url("../assets/banner_transparent_left.png") no-repeat left top /
       contain,
-    url("../images/banner_transparent_right.png") no-repeat right top / contain;
+    url("../assets/banner_transparent_right.png") no-repeat right top / contain;
   background-color: #ffaf00;
   color: #210002;
   display: inline-block;
@@ -263,9 +263,9 @@ s:before {
   transition: background-color 0.15s;
 }
 .banner.arrow span {
-  background: url("../images/banner_transparent_left.png") no-repeat left top /
+  background: url("../assets/banner_transparent_left.png") no-repeat left top /
       contain,
-    url("../images/banner_arrow_transparent_right.png") no-repeat right top /
+    url("../assets/banner_transparent_right.png") no-repeat right top /
       contain;
 }
 .active .banner span {
@@ -286,10 +286,10 @@ a:hover .banner span s:before {
 }
 
 .link.active .banner span {
-  background: url("../images/banner_outlined_left.png") no-repeat left top /
+  background: url("../assets/banner_outlined_left.png") no-repeat left top /
       contain,
-    url("../images/banner_outlined_right.png") no-repeat right top / contain,
-    url("../images/banner_outlined_body.png") repeat-x center top / contain;
+    url("../assets/banner_outlined_right.png") no-repeat right top / contain,
+    url("../assets/banner_outlined_body.png") repeat-x center top / contain;
 }
 
 .smalllinks li.pc .steam h3 {
