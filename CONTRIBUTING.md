@@ -58,6 +58,3 @@ By following these guidelines, you contribute to maintaining a welcoming and inc
 
 Happy contributing!
 
----
-
-Feel free to customize these guidelines to match the specific needs and workflow of your project.
