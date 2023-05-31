@@ -1,4 +1,4 @@
-# PhishGuard - A Cyber Awareness Game 🎮🔒
+# PhishGuard 🎮🔒🚀: Defend against cyber attacks with gamified learning.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![GitHub issues](https://img.shields.io/github/issues/iammuhammedfuhad/PhishGuard.svg)
@@ -6,7 +6,8 @@
 
 <a href="https://bmc.link/PhishGuard" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
-PhishGuard is an interactive cyber awareness game designed to educate users about phishing attacks and improve their ability to detect and avoid them.
+
+PhishGuard is an open-source cyber awareness game that empowers users to defend against phishing, malware, and social engineering attacks. 🎮 Through immersive levels and a gamified learning experience, it equips players with knowledge, skills, and confidence to recognize and respond effectively to these threats. Join us in the fight against cybercrime and make a difference with PhishGuard! 🔒🚀
 
 ## 🎥 Demo
 
