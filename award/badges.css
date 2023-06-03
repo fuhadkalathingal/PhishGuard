@@ -1,119 +1,127 @@
-@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
-
-:root {
-    background-color: #fff;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* Global Styles */
+body {
+    background-color: #fff; /* Updated background color */
     font-size: 62.5%;
-    font-family: 'Nova Square', cursive;
     font-family: "Poppins", sans-serif;
-}
-
-h1 {
-    font-size: 24px;
-    text-align: center;
-    margin: 20px;
-    color: #333333;
-    margin-bottom: 5rem;
-}
-
-
-.container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: #000;
+    overflow: hidden; /* Hide the scrollbar */
+  }
+  
+  .container {
+    width: 100%;
     max-width: 80rem;
     margin: 0 auto;
     padding: 2rem;
-}
-
-.flex-column {
     display: flex;
-    flex-direction: column;
-}
-
-.flex-center {
     justify-content: center;
     align-items: center;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-.text-center {
+    min-height: 100vh;
+    box-sizing: border-box;
+    flex-direction: column;
     text-align: center;
-}
-
-.hidden {
+  }
+  
+  .flex-center {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .hidden {
     display: none;
-}
-
-.btn {
+  }
+  
+  /* Button Styles */
+  .btn {
     font-size: 2.4rem;
     font-weight: bold;
-    padding: 1rem 0;
-    width: 24rem;
+    padding: 1.2rem 2.4rem;
+    width: fit-content;
     text-align: center;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: auto;
     text-decoration: none;
     color: #fff;
-    background: #ff5500;
+    background-color: #ff5f00;
+    border: none;
     border-radius: 4px;
-}
-
-.btn:hover {
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  .btn:hover {
     cursor: pointer;
-    transition: transform 150ms;
-    transform: scale(1.03);
-}
-
-.btn[disabled]:hover {
+    transform: scale(1.05);
+  }
+  
+  .btn[disabled]:hover {
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
-}
-
-
-.fa-home {
-    margin-left: 1rem;
-    font-size: 2rem;
-    color: rgb(28, 26, 26)
-}
-
-/* CSS for Current Level H1 */
-#currentLevel {
-    font-size: 24px;
-    text-align: center;
-    margin: 20px;
   }
   
-  /* CSS for Awards Text */
-  .awardsText {
-    font-size: 22px;
-    text-align: center;
-    margin-bottom: 10px;
+  .fa-home {
+    margin-left: 0.8rem;
+    font-size: 2rem;
     color: #fff;
   }
   
-  /* CSS for Awards Image */
-  img {
+  @media screen and (max-width: 768px) {
+    .btn {
+      width: 100%;
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+    }
+  }
+  
+  /* Score and Awards Styles */
+  #finalScore {
+    font-size: 3.2rem;
+    margin: 2rem;
+  }
+  
+  .awardsText {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    color: #000;
+  }
+  
+  #awardsImages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  #awardsImages img {
     display: block;
-    margin: 0 auto;
+    margin: 1rem;
     max-width: 100%;
     height: auto;
     width: 100px;
     height: 100px;
+    border-radius: 50%;
+    border: 4px solid #ddf4ff; /* Updated award border color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
   
-  #awards p{
-    color: white;
-    font-size: 20px;
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  
+    #awardsImages img {
+      width: 80px;
+      height: 80px;
+    }
   }
+  
