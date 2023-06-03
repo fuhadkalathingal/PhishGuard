@@ -13,6 +13,9 @@ PhishGuard is an open-source cyber awareness game that empowers users to defend 
 
 Check out the live demo of PhishGuard: [PhishGuard Live Demo](https://iammuhammedfuhad.github.io/PhishGuard/)
 
+![PhishGuard](https://github.com/iammuhammedfuhad/PhishGuard/assets/115918224/4e0a38cf-f0e7-4ae5-a0ca-20a7e6f02732)
+
+
 ## ✨ Features
 
 - Engaging gameplay with levels of increasing difficulty 🚀
