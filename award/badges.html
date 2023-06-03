@@ -26,49 +26,28 @@
         </div>
     </div>
     <script>
-        // Retrieve the current level value from local storage
-        const currentLevel = localStorage.getItem('currentLevel');
+        const levelBadges = [
+            '../images/level_1.png',
+            '../images/level_2.png',
+            // Add more image URLs for higher levels if needed
+        ];
 
-        // Retrieve the highest level reached from local storage
-        const highestLevel = localStorage.getItem('highestLevel');
+        const awardsImagesContainer = document.getElementById('awardsImages');
 
-        // Display the current level on the page
-        const currentLevelElement = document.getElementById('currentLevel');
-        currentLevelElement.textContent = 'Current Level: ' + currentLevel;
 
-        // Display the awards for each level up to the current level
-        const awardsElement = document.getElementById('awards');
+        const currentLevel = parseInt(getCookie('highestLevel'));
 
-        if (currentLevel) {
-            for (let level = 1; level <= currentLevel; level++) {
-                // Create an image element for the award
-                const awardImage = document.createElement('img');
-
-                // Set the image source based on the level
-                awardImage.src = `images/level_${level}.png`; // Replace with the appropriate image source
-
-                // Add alt text to the image
-                awardImage.alt = `Level ${level} Award`;
-
-                // Add a class to the image for styling
-                awardImage.classList.add('awardImage');
-
-                // Add the image element to the awards element
-                awardsElement.appendChild(awardImage);
-            }
-        } else {
-            const noAwardsText = document.createElement('p');
-            noAwardsText.textContent = 'No awards to display.';
-            awardsElement.appendChild(noAwardsText);
+        // Display images up to the current level
+        for (let i = 0; i < currentLevel; i++) {
+            const image = document.createElement('img');
+            image.src = levelBadges[i];
+            image.alt = `Badge Level ${i + 1}`;
+            awardsImagesContainer.appendChild(image);
         }
-    </script>
 
-    <script>
-        // Assign the value 2 to the existing 'highestLevel' variable
-        highestLevel = 2;
-
-        // Save the highest level to localStorage
-        localStorage.setItem('highestLevel', highestLevel);
+        // Update current level
+        const currentLevelElement = document.getElementById('currentLevel');
+        currentLevelElement.textContent = `Current Level: ${currentLevel}`;
 
     </script>
 </body>

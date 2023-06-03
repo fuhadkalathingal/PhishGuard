@@ -166,7 +166,7 @@ input::placeholder {
   }
   
   /* CSS for Awards Image */
-  .awardImage {
+  img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
