@@ -33,21 +33,50 @@
         ];
 
         const awardsImagesContainer = document.getElementById('awardsImages');
+        const currentLevelElement = document.getElementById('currentLevel');
 
+        // Get the current level from the cookie
+        const currentLevel = getCookie('highestLevel');
 
-        const currentLevel = parseInt(getCookie('highestLevel'));
+        if (currentLevel) {
+            const level = parseInt(currentLevel);
 
-        // Display images up to the current level
-        for (let i = 0; i < currentLevel; i++) {
-            const image = document.createElement('img');
-            image.src = levelBadges[i];
-            image.alt = `Badge Level ${i + 1}`;
-            awardsImagesContainer.appendChild(image);
+            if (level && level > 0) {
+                // Display images up to the current level
+                for (let i = 0; i < level; i++) {
+                    const image = document.createElement('img');
+                    image.src = levelBadges[i];
+                    image.alt = `Badge Level ${i + 1}`;
+                    awardsImagesContainer.appendChild(image);
+                }
+
+                // Update current level
+                currentLevelElement.textContent = `Current Level: ${level}`;
+            } else {
+                // Handle the case when the current level is not available or invalid
+                currentLevelElement.textContent = 'Current Level: Not Available';
+            }
+        } else {
+            // Handle the case when the current level is not available
+            currentLevelElement.textContent = 'Current Level: Not Available';
         }
 
-        // Update current level
-        const currentLevelElement = document.getElementById('currentLevel');
-        currentLevelElement.textContent = `Current Level: ${currentLevel}`;
+        function getCookie(name) {
+            const cookieName = `${name}=`;
+            const cookies = document.cookie.split(';');
+
+            for (let i = 0; i < cookies.length; i++) {
+                let cookie = cookies[i];
+                while (cookie.charAt(0) === ' ') {
+                    cookie = cookie.substring(1);
+                }
+                if (cookie.indexOf(cookieName) === 0) {
+                    return cookie.substring(cookieName.length, cookie.length);
+                }
+            }
+            return null;
+        }
+
 
     </script>
 </body>
