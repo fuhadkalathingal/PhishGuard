@@ -21,18 +21,6 @@ h1 {
     margin-bottom: 5rem;
 }
 
-.summary{
-  font-size: 2.4rem;
-  color: #fff;
-  margin-bottom: 5rem;
-  text-align: center;
-}
-
-
-h2 {
-    font-size: 4.2rem;
-    margin-bottom: 4rem;
-}
 
 .container {
     width: 100vw;
@@ -93,56 +81,6 @@ h2 {
     transform: none;
 }
 
-#highscore-btn {
-    background: linear-gradient(90deg, rgb(255, 247, 9) 0%, rgb(240, 221, 6) 100%);
-}
-
-#highscore-btn:hover {
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(255,255,0,0.5)
-}
-
-.fa-crown {
-    font-size: 2.5rem;
-    margin-left: 1rem;
-}
-
-/* End Page CSS */
-.end-form-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 30rem;
-}
-
-input {
-    margin-bottom: 1rem;
-    width: 20rem;
-    padding: 1.5rem;
-    font-size: 1.8rem;
-    border: none;
-    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
-}
-
-input::placeholder {
-    color: #aaa;
-}
-
-#username {
-    margin-bottom: 3rem;
-    width: 100%;
-    outline: none;
-}
-
-#end-text {
-    font-size: 2.4rem;
-    color: #fff;
-    text-align: center;
-}
-
-#saveScoreBtn {
-    border: none;
-}
 
 .fa-home {
     margin-left: 1rem;
