@@ -17,9 +17,9 @@ ul {
 /* Global styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
   color: #333333;
   line-height: 1.5;
+  background-color: #333333;
 }
 
 .container {
@@ -34,8 +34,9 @@ body {
 }
 
 .banner span {
-  border-bottom: 2px solid #ff5500;
+  border-bottom: 2px solid #8400ff;
   padding-bottom: 5px;
+  color: rgb(17, 252, 232);
 }
 
 .smalllinks {
@@ -181,7 +182,7 @@ body {
 
 .reportcaptions {
   font-size: 16px;
-  color: #ff5500;
+  color: #00ff80;
   text-transform: uppercase;
   display: block;
   height: 34px;
@@ -206,7 +207,7 @@ body {
 }
 .quotation {
   font-size: 22px;
-  color: #ff5500;
+  color: #00ff6a;
   letter-spacing: 3px;
   line-height: 48px;
 }
@@ -218,7 +219,7 @@ body {
 }
 
 .gridcaptionbold {
-  color: #333333;
+  color: #63e20f;
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 3px;

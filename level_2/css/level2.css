@@ -14,7 +14,7 @@
  
  
  html {
-     background-color: #210002;
+     background-color: #333333;
      color: #ffaf00;
      font-family: 'Verlag A', 'Verlag B', "Verlag";
      font-weight: 300;
@@ -103,7 +103,7 @@
  }
  
  #maincontain {
-     background-color: #210002;
+     background-color: #333333;
      position: relative;
      z-index: 98;
  }
@@ -121,18 +121,18 @@
      margin-right: auto;
      z-index: 99;
      position: relative;
-     background-color: #210002;
+     background-color: #333333;
  }
  
  .banner span {
      background: url('../assets/banner_transparent_left.png') no-repeat left top / contain, 
                  url('../assets/banner_transparent_right.png') no-repeat right top / contain;
-     background-color: #ffaf00;
-     color: #210002;
+     background-color: #2600ff;
+     color: #f3f3f3;
      display: inline-block;
      padding: .5em 1.1em;
      background-clip: padding-box;
-     outline: 1px solid #210002;
+     outline: 1px solid #04fa56;
      transition: background-color 0.15s;
  }
  .banner.arrow span {
@@ -153,7 +153,7 @@
          background-color: #ffffff;
      }
  .subpagenav .active .banner span {
-     color: #ffaf1b;
+     color: #ff1b5f;
  }
  
  .link.active .banner span {
@@ -203,14 +203,14 @@
  }
  
  .section .dim li>a h3, .section .dim li.active>a h4.banner span {
-     background-color: #210002;
+     background-color: #333333;
  }
  
  .section .dim li>a h3, .section .dim li>a h4.banner span, .smalllinks.switch h4.banner span {
      background-color: #973700;
  }
  .section .dim li>a:hover h3, .section .dim li>a:hover h4.banner span, a.smalllinks.switch:hover h4.banner span {
-     background-color: #ffaf00;
+     background-color: #00ff15;
  }
  
  
@@ -308,7 +308,7 @@
      line-height: 26px;
      text-transform: uppercase;
      letter-spacing: 2px;
-     color: #973700;
+     color: #31c7f5;
  }
  
  .section.companylinks {
