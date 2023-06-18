@@ -17,9 +17,9 @@ ul {
 /* Global styles */
 body {
   font-family: Arial, sans-serif;
-  color: #333333;
+  color: #f7f0f0;
   line-height: 1.5;
-  background-color: #333333;
+  background-color: #f0e4e4;
 }
 
 .container {
@@ -36,7 +36,7 @@ body {
 .banner span {
   border-bottom: 2px solid #8400ff;
   padding-bottom: 5px;
-  color: rgb(17, 252, 232);
+  color: rgb(17, 230, 63);
 }
 
 .smalllinks {

@@ -14,8 +14,8 @@
  
  
  html {
-     background-color: #333333;
-     color: #ffaf00;
+     background-color: #faf4f4;
+     color: #ff00c8;
      font-family: 'Verlag A', 'Verlag B', "Verlag";
      font-weight: 300;
      font-style: normal;
@@ -103,7 +103,7 @@
  }
  
  #maincontain {
-     background-color: #333333;
+     background-color: #faf3f3;
      position: relative;
      z-index: 98;
  }
@@ -121,7 +121,7 @@
      margin-right: auto;
      z-index: 99;
      position: relative;
-     background-color: #333333;
+     background-color: #f3ebeb;
  }
  
  .banner span {
@@ -203,7 +203,7 @@
  }
  
  .section .dim li>a h3, .section .dim li.active>a h4.banner span {
-     background-color: #333333;
+     background-color: #e9e0e0;
  }
  
  .section .dim li>a h3, .section .dim li>a h4.banner span, .smalllinks.switch h4.banner span {
@@ -308,7 +308,7 @@
      line-height: 26px;
      text-transform: uppercase;
      letter-spacing: 2px;
-     color: #31c7f5;
+     color: #4f13f5;
  }
  
  .section.companylinks {

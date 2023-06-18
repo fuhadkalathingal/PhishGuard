@@ -140,8 +140,8 @@ a:visited {
 }
 
 html {
-  background-color: #333333;
-  color: #0fcaeb;
+  background-color: #f5e7e7;
+  color: #eb0fb4;
   font-family: "Verlag A", "Verlag B", "Verlag";
   font-weight: 300;
   font-style: normal;
@@ -200,7 +200,7 @@ s:before {
   right: -3px;
   border-top: 2px solid;
   box-shadow: 0px 1px 1px #00ff62;
-  border-color: #333333;
+  border-color: #e0d3d3;
   -webkit-transform: rotate(-4deg);
   -moz-transform: rotate(-4deg);
   -ms-transform: rotate(-4deg);
@@ -230,7 +230,7 @@ s:before {
 }
 
 #maincontain {
-  background-color: #333333;
+  background-color: #f7f2f2;
   position: relative;
   z-index: 98;
 }
@@ -247,7 +247,7 @@ s:before {
   margin-right: auto;
   z-index: 99;
   position: relative;
-  background-color: #333333;
+  background-color: #fdfafa;
 }
 
 .banner span {
@@ -334,7 +334,7 @@ a:hover .banner span s:before {
 
 .section .dim li > a h3,
 .section .dim li.active > a h4.banner span {
-  background-color: #072100;
+  background-color: #cee6c7;
 }
 
 .section .dim li > a h3,
@@ -439,7 +439,7 @@ a.smalllinks.switch:hover h4.banner span {
   line-height: 26px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #70e2c6;
+  color: #3d16ca;
 }
 
 .section.companylinks {
@@ -461,7 +461,7 @@ a.smalllinks.switch:hover h4.banner span {
   background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
-  box-shadow: inset 0 0 0 2px #210002;
+  box-shadow: inset 0 0 0 2px #dbd8d8;
   background-clip: padding-box;
   transition: background-color 0.15s;
   margin: 30px;
