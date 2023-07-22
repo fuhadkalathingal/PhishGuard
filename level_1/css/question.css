@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata&family=Roboto+Condensed:wght@700&display=swap');
 
 :root {
-    background-color: rgb(29, 26, 26)
+    background-color: #F5F5F5;
 }
 
 * {
@@ -21,9 +21,10 @@ h1 {
 
 .summary{
   font-size: 2.4rem;
-  color: #fff;
+  color: #333;
   margin-bottom: 5rem;
   text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 
@@ -72,14 +73,15 @@ h2 {
     text-align: center;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: rgb(28, 26, 26);
-    background: linear-gradient(90deg, rgb(18, 92, 255) 0%, rgb(0, 102, 255) 100%);
+    color: #fff;
+    background: #FCC451;
     border-radius: 4px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244, 0.6);
+    box-shadow: 0 0.4rem 1.4rem 0 #FBCD73;
     transition: transform 150ms;
     transform: scale(1.03);
 }
@@ -118,7 +120,7 @@ input {
     padding: 1.5rem;
     font-size: 1.8rem;
     border: none;
-    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    box-shadow: 0 0.1rem 1.4rem 0 #FBCD73;
 }
 
 input::placeholder {
@@ -133,8 +135,14 @@ input::placeholder {
 
 #end-text {
     font-size: 2.4rem;
-    color: #fff;
+    color: #000;
     text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1{
+  color: #000;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 #saveScoreBtn {
@@ -154,12 +162,12 @@ input::placeholder {
   color: #fff;
   padding: 14px 22px;
   border: none;
-  background: #4070f4;
+  background: #FCC451;
   border-radius: 6px;
   cursor: pointer;
 }
 .box.btn:hover {
-  background-color: #265df2;
+  background-color: #FBCD73;
 }
 .box-btn.show-modal,
 .modal-box {
@@ -205,7 +213,7 @@ section.active .modal-box {
 }
 .modal-box {
   font-size: 70px;
-  color: #4070f4;
+  color: #FBAE1F;
 }
 .modal-box h2 {
   margin-top: 20px;
@@ -235,6 +243,7 @@ img{
 }
 
 .loose{
-  color: #fff;
+  color: #000;
+  font-family: 'Bebas Neue', sans-serif;
 }
 

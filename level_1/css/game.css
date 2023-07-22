@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata&family=Roboto+Condensed:wght@700&display=swap');
+
 body {
     color: #fff;
 }
@@ -7,14 +9,14 @@ body {
     margin-bottom: 0.8rem;
     width: 100%;
     border-radius: 4px;
-    background: rgb(18, 93, 255);
+    background: #FBAE1F;
     font-size: 3rem;
     min-width: 80rem;
 }
 
 .choice-container:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
+    box-shadow: 0 0.4rem 1.4rem 0 #FBCD73;
     transform: scale(1.02);
     transform: transform 100ms;
 }
@@ -79,4 +81,19 @@ body {
         width: 14rem;
         height: 2rem;
     }
+}
+
+h1 {
+    color: #000;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+p {
+    color: #333333;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.choice-text {
+    color: #f5f5f5;
+    font-family: 'Roboto Condensed', sans-serif;
 }
