@@ -34,7 +34,7 @@ body {
 }
 
 .banner span {
-  border-bottom: 2px solid #ff5500;
+  border-bottom: 2px solid #FBAE1F;
   padding-bottom: 5px;
 }
 
@@ -181,7 +181,7 @@ body {
 
 .reportcaptions {
   font-size: 16px;
-  color: #ff5500;
+  color: #FBAE1F;
   text-transform: uppercase;
   display: block;
   height: 34px;
@@ -206,7 +206,7 @@ body {
 }
 .quotation {
   font-size: 22px;
-  color: #ff5500;
+  color: #FCC451;
   letter-spacing: 3px;
   line-height: 48px;
 }
@@ -235,7 +235,7 @@ body {
 
 @media (min-width: 976px) {
   .gridunit.quote {
-    height: 327px;
+    height: 227px;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -243,7 +243,7 @@ body {
   }
   .quotecontain {
     position: relative;
-    top: 10%;
+    top: 25%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
