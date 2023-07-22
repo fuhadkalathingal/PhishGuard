@@ -264,9 +264,9 @@ h4 {
 
 .section.subpagenav {
   max-width: 1425px;
-  margin: 0 auto 90px auto;
   padding-left: 25px;
   padding-right: 25px;
+  margin-top: 60px;
 }
 .section.subpagenav li.link {
   display: inline-block;
@@ -632,6 +632,7 @@ h4 {
   font-size: 14px;
   font-family: 'Inconsolata', monospace;
   text-align: center;
+  margin-top: 20px;
 }
 
 .hint a {
