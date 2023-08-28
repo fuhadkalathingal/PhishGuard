@@ -12,13 +12,13 @@ let availableQuestions = []
 
 let questions = [
     {
-        question: "Is that Facebook's real website..?",
-        choice1: 'Yes, Iam Sure',
+        question: "Is that Facebook's real website?",
+        choice1: 'Yes, I am Sure',
         choice2: 'No',
         answer: 2,
     },
     {
-        question: "What method is used here..?",
+        question: "What method is used here?",
         choice1: 'Phishing',
         choice2: 'Website Spoofing',
         answer: 2,
