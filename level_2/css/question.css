@@ -75,13 +75,14 @@ h2 {
     color: rgb(28, 26, 26);
     background: linear-gradient(90deg, rgb(18, 92, 255) 0%, rgb(0, 102, 255) 100%);
     border-radius: 4px;
+    transition: transform 0.2s ease-in-out;
 }
 
 .btn:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244, 0.6);
     transition: transform 150ms;
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 
 .btn[disabled]:hover {

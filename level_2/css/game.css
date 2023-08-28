@@ -10,6 +10,7 @@ body {
     background: rgb(18, 93, 255);
     font-size: 3rem;
     min-width: 80rem;
+    transition: transform 0.2s ease-in-out;
 }
 
 .choice-container:hover {
