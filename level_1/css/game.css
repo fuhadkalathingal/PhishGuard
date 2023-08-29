@@ -12,6 +12,7 @@ body {
     background: #FBAE1F;
     font-size: 3rem;
     min-width: 80rem;
+    transition: transform 0.2s ease-in-out;
 }
 
 .choice-container:hover {

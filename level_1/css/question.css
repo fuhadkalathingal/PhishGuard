@@ -77,13 +77,14 @@ h2 {
     background: #FCC451;
     border-radius: 4px;
     font-family: 'Roboto Condensed', sans-serif;
+    transition: transform 0.2s ease-in-out;
 }
 
 .btn:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 #FBCD73;
     transition: transform 150ms;
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 
 .btn[disabled]:hover {
