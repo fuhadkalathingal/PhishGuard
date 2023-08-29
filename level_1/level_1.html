@@ -59,18 +59,20 @@
               </button>
             </li>
             <li class="link active">
-              <a href="">
-                <h4 id="shareBtn" class="banner">
-                  <span>Share</span>
-                </h4>
-              </a>
+              <button id="share" onclick="shareBtn()">
+                Share
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+                <span class="fourth"></span>
+              </button>
             </li>
           </ul>
         </div>
 
         <script>
           document
-            .querySelector('#shareBtn')
+            .querySelector('#share')
             .addEventListener('click', (event) => {
               // Fallback, Tries to use API only
               // if navigator.share function is

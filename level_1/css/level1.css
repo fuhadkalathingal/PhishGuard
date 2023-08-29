@@ -264,7 +264,7 @@ h4 {
   max-width: 1425px;
   padding-left: 25px;
   padding-right: 25px;
-  margin-top: 60px;
+  margin: 60px auto;
 }
 .section.subpagenav li.link {
   display: inline-block;
