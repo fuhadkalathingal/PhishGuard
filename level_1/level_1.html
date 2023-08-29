@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="assets/favicon.png" />
+    <title>PhishGuard</title>
+    <meta charset="utf-8" />
 
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="assets/favicon.png">
-	<title>PhishGuard</title>
-	<meta charset="utf-8">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Phishguard: Cyber Awareness Game" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="images/badge.png" />
+    <meta
+      property="og:description"
+      content="PhishGuard Is A Game For Spreading Awareness About The Common Attacks On Cyber Space"
+    />
+    <meta property="og:site_name" content="Phishguard" />
 
-	<!-- Open Graph data -->
-	<meta property="og:title" content="Phishguard: Cyber Awareness Game">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="">
-	<meta property="og:image" content="images/badge.png">
-	<meta property="og:description"
-		content="PhishGuard Is A Game For Spreading Awareness About The Common Attacks On Cyber Space">
-	<meta property="og:site_name" content="Phishguard">
+    <link
+      rel="stylesheet"
+      href="css/level1.css"
+      type="text/css"
+      media="screen"
+      charset="utf-8"
+    />
+    <link rel="stylesheet" type="text/css" href="./../css/typography.css" />
+  </head>
 
-	<link rel="stylesheet" href="css/level1.css" type="text/css" media="screen" charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="./../css/typography.css">
+  <body class="phishguard launch subpage media">
+    <div id="page" class="page">
+      <div id="phishguardcontain">
+        <a>
+          <img
+            id="phishguardimg"
+            alt="Phishguard logo"
+            src="./../images/level_1.png"
+          />
+        </a>
+      </div>
 
-</head>
+      <div id="level1_summary">
+        <p class="hint">
+          ⓘ You will recieve a message from your friend Sam.<br />
+          Be careful because you could face an attack any time
+        </p>
+      </div>
 
-<body class="phishguard launch subpage media">
-	<div id="page" class="page">
-		<div id="phishguardcontain">
-			<a>
-				<img id="phishguardimg" alt="Phishguard logo" src="./../images/level_1.png">
-			</a>
-		</div>
+      <div id="maincontain">
+        <div class="section subpagenav">
+          <ul class="smalllinks dim">
+            <li class="link">
+              <button onclick="startBtn()">
+                Start
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+                <span class="fourth"></span>
+              </button>
+            </li>
+            <li class="link active">
+              <button id="share" onclick="shareBtn()">
+                Share
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+                <span class="fourth"></span>
+              </button>
+            </li>
+          </ul>
+        </div>
 
-		<div id="level1_summary">
-			<p class="hint">ⓘ You will recieve a message from your friend Sam.<br> Be careful because you could face an attack any time</p>
-		</div>
+        <script>
+          document
+            .querySelector('#share')
+            .addEventListener('click', (event) => {
+              // Fallback, Tries to use API only
+              // if navigator.share function is
+              // available
+              if (navigator.share) {
+                navigator
+                  .share({
+                    // Title that occurs over
+                    // web share dialog
+                    title: 'PhishGuard',
 
-
-		<div id="maincontain">
-
-			<div class="section subpagenav">
-				<ul class="smalllinks dim">
-					<li class="link">
-						<a href="video.html">
-							<h4 class="banner">
-								<span>Start</span>
-							</h4>
-						</a>
-					</li>
-					<li class="link active">
-						<a href="">
-							<h4 id="shareBtn" class="banner">
-								<span>Share</span>
-							</h4>
-						</a>
-					</li>
-				</ul>
-			</div>
-
-
-			<script>
-				document.querySelector('#shareBtn')
-					.addEventListener('click', event => {
-
-						// Fallback, Tries to use API only
-						// if navigator.share function is
-						// available
-						if (navigator.share) {
-							navigator.share({
-
-								// Title that occurs over
-								// web share dialog
-								title: 'PhishGuard',
-
-								// URL to share
-								url: 'https://fuhadkalathingal.github.io/PhishGuard/'
-							}).then(() => {
-								console.log('Thanks for sharing!');
-							}).catch(err => {
-
-								// Handle errors, if occurred
-								console.log(
-									"Error while using Web share API:");
-								console.log(err);
-							});
-						} else {
-
-							// Alerts user if API not available
-							alert("Browser doesn't support this API !");
-						}
-					})
-			</script>
-
-		</div>
-	</div>
-</body>
-
+                    // URL to share
+                    url: 'https://fuhadkalathingal.github.io/PhishGuard/',
+                  })
+                  .then(() => {
+                    console.log('Thanks for sharing!')
+                  })
+                  .catch((err) => {
+                    // Handle errors, if occurred
+                    console.log('Error while using Web share API:')
+                    console.log(err)
+                  })
+              } else {
+                // Alerts user if API not available
+                alert("Browser doesn't support this API !")
+              }
+            })
+          const startBtn = () => window.open('video.html')
+        </script>
+      </div>
+    </div>
+  </body>
 </html>
