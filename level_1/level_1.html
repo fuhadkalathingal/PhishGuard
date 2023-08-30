@@ -28,6 +28,20 @@
       <source src="assets/level1.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var audio = document.getElementById("backgroundAudio");
+
+        // Pause the audio when the page becomes hidden
+        document.addEventListener("visibilitychange", function() {
+          if (document.hidden) {
+            audio.pause();
+          } else {
+            audio.play();
+          }
+        });
+      });
+    </script>
   </head>
 
   <body class="phishguard launch subpage media">
