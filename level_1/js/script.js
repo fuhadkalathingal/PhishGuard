@@ -91,34 +91,4 @@ document.addEventListener("DOMContentLoaded", function() {
       messageInput.value = "";
     }
   });
-  //Start Hint Magnifying tool
-const questionContainer = document.querySelector('.question-container');
-const magnifyingGlass = document.querySelector('.magnifying-glass');
-const magnifyingGlassContent = document.querySelector('.magnifying-glass-content');
-const hiddenAnswer = document.querySelector('.hidden-answer');
-
-questionContainer.addEventListener('mousemove', (e) => {
-  const { left, top } = questionContainer.getBoundingClientRect();
-  const mouseX = e.clientX - left;
-  const mouseY = e.clientY - top;
-
-  const glassX = mouseX - magnifyingGlass.offsetWidth / 2;
-  const glassY = mouseY - magnifyingGlass.offsetHeight / 2;
-
-  magnifyingGlass.style.left = `${glassX}px`;
-  magnifyingGlass.style.top = `${glassY}px`;
-  magnifyingGlassContent.style.backgroundPosition = `-${glassX * 5}px -${glassY * 5}px`;
-  questionContainer.addEventListener('mousemove', (e) => {
-    /* ... Existing mousemove code ... */
-  
-    // Calculate the zoom level based on cursor position
-    const zoomLevel = 1; // Adjust this value to control the zoom level
-    magnifyingGlass.style.transform = `scale(${zoomLevel})`;
-    //End Hint Magnifying Tool
-  });
 });
-
-
-
-});
-
