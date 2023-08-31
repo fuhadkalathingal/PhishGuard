@@ -34,11 +34,11 @@
         </div>
         <div class="choice-container">
           <p class="choice-prefix">C</p>
-          <p class="choice-text" data-number="3">Choice 3</p>
+          <p class="choice-text" data-number="3">Choice 2</p>
         </div>
         <div class="choice-container">
           <p class="choice-prefix">D</p>
-          <p class="choice-text" data-number="4">Choice 4</p>
+          <p class="choice-text" data-number="4">Choice 2</p>
         </div>
       </div>
     </div>
@@ -64,10 +64,18 @@
           choice4: "Phishing link is a good link",
           answer: 3,
         },
+        {
+          question: "Choose the correct option based on the amazon voucher 🎁💰",
+          choice1: "It'\s genuine, and I'm eager to claim the vouvher.",
+          choice2: "No, It'\s not secure. It seems to be a phishing link.",
+          choice3: "I trust this voucher completely. I will shared it with all my friends.",
+          choice4: "The link is from a trusted source.",
+          answer: 2,
+        },
       ];
 
       const SCORE_POINTS = 200;
-      const MAX_QUESTIONS = 1;
+      const MAX_QUESTIONS = 2;
 
       startGame = () => {
         questionCounter = 0;
@@ -83,7 +91,7 @@
         ) {
           localStorage.setItem("mostRecentScore", score);
 
-          return window.location.assign("question_2.html");
+          return window.location.assign("save_game.html");
         }
 
         questionCounter++;

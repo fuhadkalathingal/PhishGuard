@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata&family=Roboto+Condensed:wght@700&display=swap');
+
+#phishing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#phishing-email {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#claim-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#claim-button-red {
+  background-color: #FF0000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#result-message {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+img {
+  width: 215px;
+  height: 100px;
+}
+
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 22px;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
