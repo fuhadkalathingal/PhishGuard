@@ -1,87 +1,113 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="assets/favicon.png" />
-    <title>PhishGuard</title>
-    <meta charset="utf-8" />
+<head>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="assets/favicon.png">
+	<title>PhishGuard</title>
+	<meta charset="utf-8">
 
-    <!-- Open Graph data -->
-    <meta property="og:title" content="Phishguard: Cyber Awareness Game" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="images/badge.png" />
-    <meta
-      property="og:description"
-      content="PhishGuard Is A Game For Spreading Awareness About The Common Attacks On Cyber Space"
-    />
-    <meta property="og:site_name" content="Phishguard" />
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Phishguard: Cyber Awareness Game">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="images/badge.png">
+	<meta property="og:description"
+		content="PhishGuard Is A Game For Spreading Awareness About The Common Attacks On Cyber Space">
+	<meta property="og:site_name" content="Phishguard">
 
-    <link
-      rel="stylesheet"
-      href="css/level1.css"
-      type="text/css"
-      media="screen"
-      charset="utf-8"
-    />
-    <audio id="backgroundAudio" autoplay loop>
-      <source src="assets/level1.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        var audio = document.getElementById("backgroundAudio");
+	<link rel="stylesheet" href="css/level1.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./../css/typography.css">
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background-image:url("assets/mainImage.jpeg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-attachment: fixed;
+			height: 100vh;
+			width: 100%;
+		}
 
-        // Pause the audio when the page becomes hidden
-        document.addEventListener("visibilitychange", function() {
-          if (document.hidden) {
-            audio.pause();
-          } else {
-            audio.play();
-          }
-        });
-      });
-    </script>
-  </head>
+	</style>
+</head>
 
-  <body class="phishguard launch subpage media">
-    <div class="container">
-      <div id="page" class="page">
-        <div id="phishguardcontain">
-          <a href="#">
-            <img
-              id="phishguardimg"
-              alt="Phishguard logo"
-              src="assets/newbie.png"
-            />
-          </a>
-        </div>
+<body  class="phishguard launch subpage media" >
 
-        <div id="maincontain">
-          <div class="section subpagenav">
-            <a
-              style="cursor: pointer"
-              href="hint.html"
-              class="button button--piyo"
-            >
-              <div class="button__wrapper">
-                <span class="button__text">ENTRY</span>
-              </div>
-              <div class="characterBox">
-                <div class="character wakeup">
-                  <div class="character__face"></div>
-                </div>
-                <div class="character wakeup">
-                  <div class="character__face"></div>
-                </div>
-                <div class="character">
-                  <div class="character__face"></div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+	
+	<div id="page" class="page">
+		<div id="phishguardcontain">
+			<a>
+				<img id="phishguardimg" alt="Phishguard logo" src="./../images/level_1.png">
+			</a>
+		</div>
+
+		<div id="level1_summary">
+			<p class="hint">ⓘ You will recieve a message from your friend Sam.<br> Be carefull because you could face an attack at any time</p>
+		</div>
+
+
+		<div id="maincontain">
+
+			<div class="section subpagenav">
+				<ul class="smalllinks dim">
+					<li class="link">
+						<a href="video.html">
+							<h4 class="banner">
+								<span>Start</span>
+							</h4>
+						</a>
+					</li>
+					<li class="link active">
+						<a href="">
+							<h4 id="shareBtn" class="banner">
+								<span>Share</span>
+							</h4>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+
+			<script>
+				document.querySelector('#shareBtn')
+					.addEventListener('click', event => {
+
+						// Fallback, Tries to use API only
+						// if navigator.share function is
+						// available
+						if (navigator.share) {
+							navigator.share({
+
+								// Title that occurs over
+								// web share dialog
+								title: 'PhishGuard',
+
+								// URL to share
+								url: 'https://fuhadkalathingal.github.io/PhishGuard/'
+							}).then(() => {
+								console.log('Thanks for sharing!');
+							}).catch(err => {
+
+								// Handle errors, if occurred
+								console.log(
+									"Error while using Web share API:");
+								console.log(err);
+							});
+						} else {
+
+							// Alerts user if API not available
+							alert("Browser doesn't support this API !");
+						}
+					})
+			</script>
+
+		</div>
+	</div>
+</body>
+
 </html>
