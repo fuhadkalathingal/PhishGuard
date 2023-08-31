@@ -1,96 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
     <title>Oops! better luck Next Time</title>
+    <link rel="icon" href="assets/favicon.png">
 
     <style>
-        *{
-    margin: 0px;
-    box-sizing: border-box;
-    padding: 0px;
-}
-body{
-    background-color: rgba(206, 50, 50, 0.836);
-}
-#home{
-   width: 100%;
-   margin-top: 40px;
-   height: 100vh;
-   display: flex;
-   justify-content: center;
-}
-.eror-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.error_msg{
-    
-    border-radius: 15px;
-    padding-bottom: 20px;
-    border: 5px solid orange;
-    /* outline: 8px solid white; */
-    padding-top: 20px;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(252, 235, 142, 0.863);
-}
-.error_msg h1{
-    color: brown;
-    text-align: center;
-}
-.error_msg p{
-    color: brown;
-    text-align: center;
-}
-.error{
-    margin-top: 55%;
-    width: 300px;
-}
-.btn1{
-    margin-top: -15px;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: rgb(113, 174, 224);
-    border: 2px solid orange;
-}
-.btn2{
-    margin-top: -15px;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: rgb(238, 123, 142);
-    border: 2px solid orange;
-}
-.error-btn{
-    margin-left: 40px;
-    margin-right: 40px;
-    display: flex;
-    justify-content: space-between;
-}
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata&family=Roboto+Condensed:wght@700&display=swap");
+      
+      * {
+        margin: 0px;
+        box-sizing: border-box;
+        padding: 0px;
+      }
+      body {
+        background-color: rgba(206, 50, 50, 0.836);
+        overflow: hidden;
+      }
+      #home {
+        width: 100%;
+        margin-top: 40px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+      }
+      .eror-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .error_msg {
+        border-radius: 15px;
+        padding-bottom: 20px;
+        border: 5px solid orange;
+        /* outline: 8px solid white; */
+        padding-top: 20px;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(252, 235, 142, 0.863);
+      }
+      .error_msg h1 {
+        color: brown;
+        text-align: center;
+        font-family: 'Bebas Neue', sans-serif;
+      }
+      .error_msg p {
+        color: brown;
+        text-align: center;
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+      .error {
+        margin-top: 55%;
+        width: 300px;
+      }
+      .btn1 {
+        margin-top: -15px;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgb(113, 174, 224);
+        border: 2px solid orange;
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+      .btn2 {
+        margin-top: -15px;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgb(238, 123, 142);
+        border: 2px solid orange;
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+      .error-btn {
+        margin-left: 40px;
+        margin-right: 40px;
+        display: flex;
+        justify-content: space-between;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="home">
       <div class="error-main">
         <div class="error">
-            <div class="error_msg">
-             <h1>Game Over</h1>
-            <p>Oops ! <br> Better Luck Next Time </p>
-            </div>
-            
-            <div class="error-btn">
-                <a class="btn1" href="">Home</a>
-                <a class="btn2" href="">retry</a>
-            </div>
+          <div class="error_msg">
+            <h1>Game Over</h1>
+            <p>
+              Oops ! <br />
+              Better Luck Next Time
+            </p>
+          </div>
+
+          <div class="error-btn">
+            <a class="btn1" href="">Home</a>
+            <a class="btn2" href="sam.html">retry</a>
+          </div>
         </div>
       </div>
     </div>
-</body>
+  </body>
 </html>
