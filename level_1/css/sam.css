@@ -841,3 +841,9 @@ font-size: 15px;
     width: 215px;
   }
 }
+
+.fullscreen-video{
+  align-items: center;
+  margin-right: 100px;
+
+}
