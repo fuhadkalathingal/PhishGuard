@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save</title>
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="css/question.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div id="end" class="flex-center flex-column">
+                <h1 id="finalScore">0</h1>
+                <form class="end-form-container">
+                    <h2 id="end-text">ENTER YOUR NAME BELOW TO SAVE YOUR SCORE!</h2>
+                    <input type="text" name="name" id="username" placeholder="Enter your name">
+                    <button class="btn show-modal" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)"
+                        disabled>SAVE</button>
+                </form>
+                <a href="game.html" class="btn">PLAY AGAIN</a>
+                <span class="overlay"></span>
+            </div>
+        </div>
+        <div class="modal-box">
+            <img src="assets/newbie.png" alt="">
+            <h2>Level 1 Completed 🏆</h2>
+            <h3>You have successfully completed this level,<br> but there is more to do.<br> Click "Next" to continue.</h3>
+
+            <div class="buttons">
+                <button class="box-btn"><a href="next.html" style="text-decoration: none; color: #fff; font-size: 15px;">Next</a></button>
+            </div>
+        </div>
+    </section>
+    <script src="js/end.js"></script>
+</body>
+
+</html>

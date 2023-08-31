@@ -31,11 +31,11 @@ saveHighScore = e => {
 
     localStorage.setItem('highScores', JSON.stringify(highScores));
 
-    if (mostRecentScore === '200') {
+    if (mostRecentScore === '400') {
         console.log('Score is 200. Perform special action.');
         executeConfettiAnimation();
     } else {
-        window.location.assign('loose.html');
+        window.location.assign('gameover.html');
     }
 };
 

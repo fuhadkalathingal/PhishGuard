@@ -11,7 +11,7 @@ PhishGuard is an open-source cyber awareness game that empowers users to defend 
 
 ## 🎥 Demo
 
-Check out the live demo of PhishGuard: [PhishGuard Live Demo](https://iammuhammedfuhad.github.io/PhishGuard/)
+Check out the live demo of PhishGuard: [PhishGuard Live Demo](https://fuhadkalathingal.github.io/PhishGuard/)
 
 ![PhishGuard](https://github.com/iammuhammedfuhad/PhishGuard/assets/115918224/4e0a38cf-f0e7-4ae5-a0ca-20a7e6f02732)
 
@@ -29,13 +29,13 @@ To run PhishGuard locally, follow these steps:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/iammuhammedfuhad/PhishGuard.git
+   git clone https://github.com/fuhadkalathingal/PhishGuard.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd PhishGuard
+   cd PhishGuard/
    ```
 
 ## 🎮 Usage
