@@ -8,15 +8,134 @@
     <title>Phishing Animated Video</title>
     <link rel="stylesheet" href="css/level1.css">
     <link rel="stylesheet" href="assets/phishing_logo.png">
+    <link rel=stylesheet href=css/main.css>
 </head>
 
 <body>
-    <div id="video-container">
-        <video id="fullscreen-video" src="assets/video.mp4" controls></video>
-        <button id="fullscreen-button">Fullscreen</button>
-    </div>
+	
+ <!-- CoreMetrics tagging -->
+<script src="//libs.coremetrics.com/eluminate.js" type="text/javascript"></script>
+<script src="//corelib.trendmicro.com/common/coremetrics/cmcustom.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+	cmSetClientID("90369712",false,"analytics.trendmicro.com",cmCWAGetCookieDomain());
+</script>
+
+<script type="text/javascript">
+	cmCreatePageviewTag('Targeted Attacks Video','Targeted Attacks');
+</script>
+<!-- End CM Tagging -->
+		<div id="loader"></div>
+		<section class="tutorial" id="tutorial-1">
+			<p>
+				Just as in the real world, some of the decisions you make
+				<br />
+				in the course of this game
+				<br />
+				will cost you financially
+			</p>
+		</section>
+		<section class="tutorial" id="tutorial-2">
+			<p>
+				Your budget is represented
+				<br />
+				by the red Trend Micro coins
+				<br />
+				in the top left.
+			</p>
+		</section>
+		<section class="tutorial" id="tutorial-3">
+			<p>
+				Bear in mind that when it's
+				<br />
+				gone, it's gone and some
+				<br />
+				options may no longer be
+				<br />
+				available to you.
+			</p>
+		</section>
+
+		<section class=player id=CH1_INTRO name=subControl>
+			<section  class="video-container" id="coins"></section>
+			<section id="pa-q">
+				<a id="again-button" href="#" onclick='location.reload(true); return false;'></a>
+				<a id="quit-button" href="../../"></a>
+			</section>
+			<section id=player--controls >
+				<a class="btn sub-inactive" id=player-btn--subtitles href=#>Subtitles</a>
+				<!-- <a class=btn id=player-btn--begin href=#>Play</a> -->
+				<a class=btn id=player-btn--skip href=https://fuhadkalathingal.github.io/PhishGuard/level_1/sam.html>Skip section</a>
+				<a class=btn id=player-btn--a href=#>A</a><a class=btn id=player-btn--b href=#>B</a><a class=btn id=player-btn--c href=#>C</a>
+			</section>
+			<div class="fullscreen-video" id="video-outer">
+				<div id="napisy"></div>
+				<video class="videoalign" preload=auto controls id="player--video" autoplay="autoplay">
+					<source src=assets/video.ogv type=video/ogv> <source src=assets/video.mp4 type=video/mp4> <source src=assets/video. type=video/webm>
+				</video>
+
+			</div>
+			<div id="cntrl-wrapper">
+				<div class="control" id="controlsid">
+					<div class="progress">
+						<span class="bufferBar"></span>
+						<span class="timeBar"></span>
+					</div>
+
+					<div class="btmControl">
+
+						<div class="mainControl">
+							<a class="btnPlay lvl1 btnmain paused" href="#" tabindex="0" title="Play/Pause video"> <span class="ico"></span> </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="loading"></div>
+			<div id="video-controls">
+				<!-- <span id="play-pause" class="play"><span class=pause-icon></span></span></button> -->
+			</div>
+			<div id=loader-icon>
+				<svg width=70 height=20>
+					<rect width=20 height=20 x=0 y=0 rx=3 ry=3>
+						<animate attributename=width values=0;20;20;20;0 dur=1000ms repeatcount="indefinite">
+							<animate attributename=height values=0;20;20;20;0 dur=1000ms repeatcount="indefinite">
+								<animate attributename=x values=10;0;0;0;10 dur=1000ms repeatcount="indefinite">
+									<animate attributename=y values=10;0;0;0;10 dur=1000ms repeatcount="indefinite">
+					</rect>
+					<rect width=20 height=20 x=25 y=0 rx=3 ry=3>
+						<animate attributename=width values=0;20;20;20;0 begin=200ms dur=1000ms repeatcount="indefinite">
+							<animate attributename=height values=0;20;20;20;0 begin=200ms dur=1000ms repeatcount="indefinite">
+								<animate attributename=x values=35;25;25;25;35 begin=200ms dur=1000ms repeatcount="indefinite">
+									<animate attributename=y values=10;0;0;0;10 begin=200ms dur=1000ms repeatcount="indefinite">
+					</rect>
+					<rect width=20 height=20 x=50 y=0 rx=3 ry=3>
+						<animate attributename=width values=0;20;20;20;0 begin=400ms dur=1000ms repeatcount="indefinite">
+							<animate attributename=height values=0;20;20;20;0 begin=400ms dur=1000ms repeatcount="indefinite">
+								<animate attributename=x values=60;50;50;50;60 begin=400ms dur=1000ms repeatcount="indefinite">
+									<animate attributename=y values=10;0;0;0;10 begin=400ms dur=1000ms repeatcount="indefinite">
+					</rect>
+				</svg>
+			</div>
+		</section>
+		<!-- End of Pacamera App-->
+		<script src=js/modernizr.js></script>
+		<script src=js/system.js></script>
+		<script>
+			$("#player-btn--skip").on("click", function() {
+				Popcorn("#player--video").play();
+				console.log("SKIP CLICK IE");
+			});
+			
+        
+    </script>
+    <script src=js/main.js></script>
+    <script src=js/video.js></script>
+    <script src=js/styles.js></script>
+    <script src=js/stats.js></script>
     <script>
+	video = document.getElementById('player--video');
+video.addEventListener('ended',function() {alert('Video is ended Going to the mission');       
+window.location.href = 'sam.html';})
         const fullscreenButton = document.getElementById('fullscreen-button');
         const videoElement = document.getElementById('fullscreen-video');
 
@@ -30,14 +149,10 @@
             } else if (videoElement.msRequestFullscreen) { // IE/Edge
                 videoElement.msRequestFullscreen();
             }
+			
         });
-
-        videoElement.addEventListener('ended', function () {
-            window.location.href = 'sam.html';
-        });
-
-
     </script>
+	
 </body>
 
 </html>
