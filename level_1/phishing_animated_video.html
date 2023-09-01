@@ -6,55 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phishing Animated Video</title>
-    <link rel="stylesheet" href="css/level1.css">
-    <link rel="stylesheet" href="assets/phishing_logo.png">
-    <link rel=stylesheet href=css/main.css>
+    <link rel="icon" href="assets/favicon.png">
+    <link rel=stylesheet href=css/video.css>
 </head>
 
 <body>
-	
- <!-- CoreMetrics tagging -->
-<script src="//libs.coremetrics.com/eluminate.js" type="text/javascript"></script>
-<script src="//corelib.trendmicro.com/common/coremetrics/cmcustom.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-	cmSetClientID("90369712",false,"analytics.trendmicro.com",cmCWAGetCookieDomain());
-</script>
-
-<script type="text/javascript">
-	cmCreatePageviewTag('Targeted Attacks Video','Targeted Attacks');
-</script>
-<!-- End CM Tagging -->
 		<div id="loader"></div>
-		<section class="tutorial" id="tutorial-1">
-			<p>
-				Just as in the real world, some of the decisions you make
-				<br />
-				in the course of this game
-				<br />
-				will cost you financially
-			</p>
-		</section>
-		<section class="tutorial" id="tutorial-2">
-			<p>
-				Your budget is represented
-				<br />
-				by the red Trend Micro coins
-				<br />
-				in the top left.
-			</p>
-		</section>
-		<section class="tutorial" id="tutorial-3">
-			<p>
-				Bear in mind that when it's
-				<br />
-				gone, it's gone and some
-				<br />
-				options may no longer be
-				<br />
-				available to you.
-			</p>
-		</section>
 
 		<section class=player id=CH1_INTRO name=subControl>
 			<section  class="video-container" id="coins"></section>
@@ -63,15 +20,12 @@
 				<a id="quit-button" href="../../"></a>
 			</section>
 			<section id=player--controls >
-				<a class="btn sub-inactive" id=player-btn--subtitles href=#>Subtitles</a>
-				<!-- <a class=btn id=player-btn--begin href=#>Play</a> -->
-				<a class=btn id=player-btn--skip href=https://fuhadkalathingal.github.io/PhishGuard/level_1/sam.html>Skip section</a>
-				<a class=btn id=player-btn--a href=#>A</a><a class=btn id=player-btn--b href=#>B</a><a class=btn id=player-btn--c href=#>C</a>
+				<a class=btn id=player-btn--skip href="amazon.html">Skip section</a>
 			</section>
 			<div class="fullscreen-video" id="video-outer">
 				<div id="napisy"></div>
 				<video class="videoalign" preload=auto controls id="player--video" autoplay="autoplay">
-					<source src=assets/video.ogv type=video/ogv> <source src=assets/video.mp4 type=video/mp4> <source src=assets/video. type=video/webm>
+					<source src=assets/video.mp4 type=video/mp4>
 				</video>
 
 			</div>
@@ -117,8 +71,7 @@
 				</svg>
 			</div>
 		</section>
-		<!-- End of Pacamera App-->
-		<script src=js/modernizr.js></script>
+
 		<script src=js/system.js></script>
 		<script>
 			$("#player-btn--skip").on("click", function() {
@@ -130,12 +83,10 @@
     </script>
     <script src=js/main.js></script>
     <script src=js/video.js></script>
-    <script src=js/styles.js></script>
-    <script src=js/stats.js></script>
     <script>
 	video = document.getElementById('player--video');
 video.addEventListener('ended',function() {alert('Video is ended Going to the mission');       
-window.location.href = 'sam.html';})
+window.location.href = 'amazon.html';})
         const fullscreenButton = document.getElementById('fullscreen-button');
         const videoElement = document.getElementById('fullscreen-video');
 

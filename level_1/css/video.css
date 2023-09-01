@@ -372,18 +372,13 @@ svg rect {
 	transform: translateY(-50%)
 }
 
-#player-btn--skip:hover{
-  background-color: skyblue;
-}
-
 #player-btn--skip {
 	 position: fixed;
 	 right: 0;
 	 top: 10;
-	 color: black;
+	 color: white;
 	 margin-right: 5px;
 	 border: none;
-	 border-radius: 50px;
 }
 #player-btn--begin {
 	position: fixed;
@@ -399,6 +394,14 @@ svg rect {
 	padding-top: 12%;
 	width: 24%;
 }
+
+@media (min-width: 850px) {
+	#player-btn--skip {
+		background-color: #000;
+		margin-bottom: 10px;
+	}
+}
+
 #player-btn--a, #player-btn--b, #player-btn--c {
 	/*background: rgba(0, 0, 0, 0.36);*/
 	background-image: url(../images/left-top.png), url(../images/right-top.png), url(../images/bottom-left.png), url(../images/bottom-right.png);

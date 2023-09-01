@@ -7,6 +7,11 @@
     <link rel="icon" href="assets/favicon.png" />
     <link rel="stylesheet" href="css/question.css" />
     <link rel="stylesheet" href="css/game.css" />
+    <audio id="audio" autoplay loop>
+      <source src="assets/level1.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <script src="js/audio.js"></script>
   </head>
   <body>
     <div class="container">
@@ -65,10 +70,12 @@
           answer: 3,
         },
         {
-          question: "Choose the correct option based on the amazon voucher 🎁💰",
+          question:
+            "Choose the correct option based on the amazon voucher 🎁💰",
           choice1: "It'\s genuine, and I'm eager to claim the vouvher.",
           choice2: "No, It'\s not secure. It seems to be a phishing link.",
-          choice3: "I trust this voucher completely. I will shared it with all my friends.",
+          choice3:
+            "I trust this voucher completely. I will shared it with all my friends.",
           choice4: "The link is from a trusted source.",
           answer: 2,
         },
