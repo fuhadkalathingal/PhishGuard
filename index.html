@@ -193,42 +193,6 @@
               }
             });
         </script>
-
-        <script>
-          // Retrieve the start button element
-          const startButton = document.getElementById("startButton");
-
-          // Attach an event listener to the start button
-          startButton.addEventListener("click", redirectToLevel);
-
-          // Function to redirect to the appropriate level
-          function redirectToLevel(event) {
-            // Prevent the default link behavior
-            event.preventDefault();
-
-            // Check if the user has previously reached a level
-            if (localStorage.getItem("highestLevel")) {
-              const highestLevel = parseInt(
-                localStorage.getItem("highestLevel")
-              );
-
-              // Construct the URL for the appropriate level page
-              const levelUrl =
-                "https://fuhadkalathingal.github.io/PhishGuard/level_" +
-                highestLevel +
-                "/level_" +
-                highestLevel +
-                ".html";
-
-              // Redirect the user to the appropriate level page
-              window.location.href = levelUrl;
-            } else {
-              // If there is no highest level reached, redirect the user to the starting level
-              window.location.href =
-                "https://fuhadkalathingal.github.io/PhishGuard/level_1/level_1.html";
-            }
-          }
-        </script>
       </div>
     </div>
   </body>
