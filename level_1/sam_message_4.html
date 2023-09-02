@@ -63,7 +63,6 @@
         top: 50%;
         transform: translate(-50%);
       }
-      
 
       [class*="btn-glitch-"] {
         display: inline-block;
@@ -179,12 +178,20 @@
   </head>
   <body>
     <div class="hint-container">
-      <img src="assets/sam_message_4.jpg" alt="hint" />
+      <img
+        rel="preload"
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+        width="1280px"
+        height="720px"
+        src="assets/sam_message_4.jpg"
+        alt="hint"
+      />
       <h1>SAM :</h1>
       <p>Try the link, you will also get the free voucher 😊</p>
       <a id="playButton" href="amazon.html" class="btn-glitch-fill">
-        <span class="text">// Next</span
-        ><span class="text-decoration">_</span
+        <span class="text">// Next</span><span class="text-decoration">_</span
         ><span class="decoration">&rArr;</span>
       </a>
     </div>

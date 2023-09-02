@@ -63,7 +63,6 @@
         top: 50%;
         transform: translate(-50%);
       }
-      
 
       [class*="btn-glitch-"] {
         display: inline-block;
@@ -179,12 +178,23 @@
   </head>
   <body>
     <div class="hint-container">
-      <img src="assets/hint_2.jpg" alt="hint" />
+      <img
+        rel="preload"
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+        width="640px"
+        height="360px"
+        src="assets/hint_2.jpg"
+        alt="hint"
+      />
       <h1>SAM :</h1>
-      <p>Becuase of the Amazon voucher the hacker stealed all my bank money and personal details 😥 </p>
+      <p>
+        Becuase of the Amazon voucher the hacker stealed all my bank money and
+        personal details 😥
+      </p>
       <a id="playButton" href="amazon.html" class="btn-glitch-fill">
-        <span class="text">// Return</span
-        ><span class="text-decoration">_</span
+        <span class="text">// Return</span><span class="text-decoration">_</span
         ><span class="decoration">&rArr;</span>
       </a>
     </div>
