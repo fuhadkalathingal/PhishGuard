@@ -1,7 +1,7 @@
 # PhishGuard 🎮🔒🚀: Defend against cyber attacks with gamified learning.
 
 <p align="center">
-<img src="https://github.com/fuhadkalathingal/PhishGuard/assets/115918224/c1c41e55-8be7-45d9-9f6b-3ff0a8bd02cf" alt="PhishGuard"/>
+<img width="1200px" height="400px" src="https://github.com/fuhadkalathingal/PhishGuard/assets/115918224/0366299b-1da5-489b-8c74-497aa8ae20ee" alt="PhishGuard"/>
 <p/>
 
 <h4 align="center">PhishGuard is an open-source cyber awareness game that empowers users to defend against phishing, malware, and social engineering attacks. 🎮 Through immersive levels and a gamified learning experience, it equips players with knowledge, skills, and confidence to recognize and respond effectively to these threats. Join us in the fight against cybercrime and make a difference with PhishGuard! 🔒🚀</h4>
