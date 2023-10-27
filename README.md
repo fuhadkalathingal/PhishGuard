@@ -1,8 +1,7 @@
 # PhishGuard 🎮🔒🚀: Defend against cyber attacks with gamified learning.
 
 <p align="center">
-![phishguard](https://github.com/fuhadkalathingal/PhishGuard/assets/115918224/706eea3a-3d18-4474-a9f2-6a26c88b88d6)
-
+<img src="https://github.com/fuhadkalathingal/PhishGuard/assets/115918224/c1c41e55-8be7-45d9-9f6b-3ff0a8bd02cf" alt="PhishGuard"/>
 <p/>
 
 <h4 align="center">PhishGuard is an open-source cyber awareness game that empowers users to defend against phishing, malware, and social engineering attacks. 🎮 Through immersive levels and a gamified learning experience, it equips players with knowledge, skills, and confidence to recognize and respond effectively to these threats. Join us in the fight against cybercrime and make a difference with PhishGuard! 🔒🚀</h4>
@@ -35,7 +34,7 @@
 `PhishGuard is an open-source cyber awareness game that empowers users to defend against phishing, malware, and social engineering attacks. 🎮 Through immersive levels and a gamified learning experience, it equips players with knowledge, skills, and confidence to recognize and respond effectively to these threats. Join us in the fight against cybercrime and make a difference with PhishGuard! 🔒🚀
 
 ## 🚀 Demo
-Here is a quick demo of the website. We hope you enjoy it.
+Check out the live demo of PhishGuard: [PhishGuard Live Demo](https://fuhadkalathingal.github.io/PhishGuard/)
 
 > [The Demo Link](https://fuhadkalathingal.github.io/PhishGuard/)
 
@@ -47,12 +46,6 @@ Liked it? Please give a ⭐️ to <b>PhishGuard</b>.
 ### Many Thanks to all the `Stargazers` who has supported this project with stars(⭐)
 
 [![Stargazers repo roster for @fuhadkalathingal/PhishGuard](https://reporoster.com/stars/fuhadkalathingal/PhishGuard)](https://github.com/fuhadkalathingal/PhishGuard/stargazers)
-
-## 🎥 Demo
-
-Check out the live demo of PhishGuard: [PhishGuard Live Demo](https://fuhadkalathingal.github.io/PhishGuard/)
-
-![PhishGuard](https://github.com/iammuhammedfuhad/PhishGuard/assets/115918224/4e0a38cf-f0e7-4ae5-a0ca-20a7e6f02732)
 
 ## ✨ Features
 
