@@ -45,8 +45,6 @@ Liked it? Please give a ⭐️ to <b>PhishGuard</b>.
 
 ### Many Thanks to all the `Stargazers` who has supported this project with stars(⭐)
 
-[![Stargazers repo roster for @fuhadkalathingal/PhishGuard](https://reporoster.com/stars/fuhadkalathingal/PhishGuard)](https://github.com/fuhadkalathingal/PhishGuard/stargazers)
-
 ## ✨ Features
 
 - Engaging gameplay with levels of increasing difficulty 🚀
