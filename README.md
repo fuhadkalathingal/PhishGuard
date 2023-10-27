@@ -4,7 +4,7 @@
 <img src="https://github.com/fuhadkalathingal/PhishGuard/assets/115918224/0366299b-1da5-489b-8c74-497aa8ae20ee" alt="PhishGuard"/>
 <p/>
 
-<h4 align="center">PhishGuard is an open-source cyber awareness game that empowers users to defend against phishing, malware, and social engineering attacks. 🎮 Through immersive levels and a gamified learning experience, it equips players with knowledge, skills, and confidence to recognize and respond effectively to these threats. Join us in the fight against cybercrime and make a difference with PhishGuard! 🔒🚀</h4>
+<h4 align="center">PhishGuard is an open-source cyber awareness game that empowers users to defend against phishing, malware, and social engineering attacks.</h4>
 
 <p align="center">
 <a href="https://github.com/fuhadkalathingal/PhishGuard/blob/master/LICENSE" target="blank">
