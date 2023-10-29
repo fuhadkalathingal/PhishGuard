@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>知乎仿制</title>
+  <link rel="stylesheet" type="text/css" href="css/find.css">
+
+  <style>
+    /* Adds a style to center the navigation bar */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="user-info">
+    <!-- Add user profile picture -->
+    <img src="assets/4.jpg" alt="User Avatar">
+    <span class="user-name">Personal Center</span>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Home Page</a></li>
+      <li><a href="#">Discover</a></li>
+      <li><a href="#">Topic</a></li>
+      <li><a href="#">Follow</a></li>
+    </ul>
+  </nav>
+  <div class="search-box">
+    <label>
+      <input type="text" placeholder="Search for content that interests you....">
+    </label>
+    <button class="search-btn">Search</button>
+    <button id="dark-mode-toggle" class="dark-mode-button">
+      <img id="dark-mode-icon" src="assets/moon.jpg" alt="Night pattern">
+    </button>
+  </div>
+
+</header>
+<main>
+    <!-- first -->
+  <section class="question">
+    <div class="question-header">
+      <div class="user-info">
+        <!-- Add user profile picture -->
+        <img src="assets/1.jpg" alt="User Avatar">
+        <span class="user-name">Alice Smith</span>
+        <span class="user-bio">Web developer</span>
+      </div>
+    </div>
+    <h2>How do college students find employment?</h2>
+    <p>I am a college student, I feel very confused about my employment, what should I do?I hope I can find a good job in the future, so how can I work hard?</p>
+    <div class="question-options">
+      <button class="like-btn">Agree</button>
+      <button class="favorite-btn">Collect</button>
+      <button class="share-btn">Share</button>
+      <button class="comment-btn">Review</button>
+      <button class="details-btn">View Details</button>
+    </div>
+  </section>
+
+  <!-- second -->
+  <section class="question">
+    <div class="question-header">
+      <div class="user-info">
+        <!--Add user profile picture-->
+        <img src="assets/2.jpg" alt="User Avatar">
+        <span class="user-name">Bob Johnson</span>
+        <span class="user-bio">Designer</span>
+      </div>
+    </div>
+    <h2>What are some important recent scientific findings?</h2>
+    <p>Want to know what important scientific research results have been recently, what new discoveries?</p>
+    <div class="question-options">
+      <button class="like-btn">Agree</button>
+      <button class="favorite-btn">Collect</button>
+      <button class="share-btn">Share</button>
+      <button class="comment-btn">Review</button>
+      <button class="details-btn">View Details</button>
+    </div>
+  </section>
+
+  <!-- third -->
+  <section class="question">
+    <div class="question-header">
+      <div class="user-info">
+        <img src="assets/3.jpg" alt="User Avatar">
+        <span class="user-name">Eva Wilson</span>
+        <span class="user-bio">Health consultant</span>
+      </div>
+    </div>
+    <h2>What are healthy eating habits?</h2>
+    <p>Can someone share healthy eating habits and nutritional advice?</p>
+    <div class="question-options">
+      <button class="like-btn">Agree</button>
+      <button class="favorite-btn">Collect</button>
+      <button class="share-btn">Share</button>
+      <button class="comment-btn">Review</button>
+      <button class="details-btn">View Details</button>
+    </div>
+  </section>
+</main>
+
+<!-- Login prompt pop-up window -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <p>You need to log in first</p>
+    <a href="login.html">log in</a>
+    <button id="closeModal" onclick="hideLoginModal()">close</button>
+  </div>
+</div>
+
+<footer>
+  <!-- Add links to Privacy policy and Terms of Use -->
+  <p >©Privacy Policy</a> | <a href="#">Terms of use</a> | Contact us | Help center</p>
+</footer>
+
+<script src="js/find.js"></script>
+
+</body>
+</html>
